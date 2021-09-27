@@ -25,8 +25,10 @@
         <li><img src="https://cdn.bulbagarden.net/upload/4/4b/Pok%C3%A9dex_logo.png" alt="" class="pokedex"></li>
       </a>
       <div class="search">
-        <input type="text" placeholder="Who's that Pokemon?" class="search-button">
+        <input type="text" id="searchbar" onkeyup="searchPokemon()" placeholder="Who's that Pokemon?" class="search-button">
         <button class="thebutton"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Pokeball.PNG"></button>
+
+
       </div>
       <a href="">
         <li class="sidelink">Generation 1</li>
@@ -43,709 +45,1977 @@
 
   </nav>
 
-  <main class="card-container">
+<main class="card-container">
 
-    <div class="pokemon grass">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="bulbasaur">
-      <div class="cardcontent">
-        <h3>Bulbasaur #001</h3>
-        <p class="cardp">There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.</p>
-      </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
-      </div>
-      <div class="type-icon type-grass">
-        <img class="pokemontype" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/950cb3ae-f4e7-486e-9058-724c66bd7961/d7ea00b-14fd27f8-c69b-40e7-8fb7-6cda686d6d48.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTUwY2IzYWUtZjRlNy00ODZlLTkwNTgtNzI0YzY2YmQ3OTYxXC9kN2VhMDBiLTE0ZmQyN2Y4LWM2OWItNDBlNy04ZmI3LTZjZGE2ODZkNmQ0OC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.HRCkruuwpdzWFJBif1kXVX2cAZCKMC_kf6x_WTeSH_k" alt="">
-        <!-- <div><img class="balls" src="https://cdn.bulbagarden.net/upload/9/95/Dream_Master_Ball_Sprite.png" alt=""></div> -->
-      </div>
-    </div> <!-- bulbasaur -->
-    <div class="pokemon grass">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="ivysaur">
-      <div class="cardcontent">
+<!-- Bulbasaur #001 -->
+  <div class="card"> 
+      <input type="checkbox" id="card1" class="more" aria-hidden="true">
+        <div class="content">
+          <div class="front">
+            <div class="top-card grass">
+            <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
+            </div>
+            <div class="bottom-card">
+            <h3>Bulbasaur #001</h3>
+            <p class="cardp">There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.</p>
+            <label for="card1" class="button" aria-hidden="true">More info &#8594;</label>
+            </div>
+          </div>
+          <div class="back">
+            <div class="name">
+                  <h1>Bulbasaur</h1>
+                  <div class="hp"></div>
+            </div>
+            <ul class="stats">
+                  <li>Grass<br /><span class="info">Type</span></li>
+                  <li>15 lbs<br /><span class="info">Weight</span></li>
+                  <li>2' 4"<br /><span class="info">Height</span></li>
+            </ul>
+            <div class="facts">
+              <div class="split">
+                <div>
+                  <h2>Common Location</h2>
+                  <h4>Viridian City</h4>
+                  <img src="https://cdn2.bulbagarden.net/upload/b/bd/Viridian_City_HGSS.png" alt="Viridian City">
+                </div>
+              </div>
+            </div>
+            <div class="weakness">
+                <h2>Weakness: Fire Psychic Flying Ice </h2>
+                <label for="card1" class="button return" aria-hidden="true">Go Back &#8594;</label>
+            </div>
+          </div>
+        </div>  
+  </div>
+<!-- Ivysaur #002 -->
+  <div class="card"> 
+  <input type="checkbox" id="card2" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card grass">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Ivysaur #002</h3>
         <p class="cardp">When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</p>
+        <label for="card2" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Ivysaur</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>28.7 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Viridian Forest</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/1/1d/HGSS_Viridian_Forest-Night.png" alt="Viridian Forest">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Ice </h2>
+            <label for="card2" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-grass">
-        <img class="pokemontype" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/950cb3ae-f4e7-486e-9058-724c66bd7961/d7ea00b-14fd27f8-c69b-40e7-8fb7-6cda686d6d48.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTUwY2IzYWUtZjRlNy00ODZlLTkwNTgtNzI0YzY2YmQ3OTYxXC9kN2VhMDBiLTE0ZmQyN2Y4LWM2OWItNDBlNy04ZmI3LTZjZGE2ODZkNmQ0OC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.HRCkruuwpdzWFJBif1kXVX2cAZCKMC_kf6x_WTeSH_k" alt="">
-      </div>
-    </div><!-- ivysaur -->
-    <div class="pokemon grass">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Venusaur">
-      <div class="cardcontent">
-        <h3>Venusaur #003</h3>
-        <p class="cardp">Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.</p>
-      </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
-      </div>
-      <div class="type-icon type-grass">
-        <img class="pokemontype" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/950cb3ae-f4e7-486e-9058-724c66bd7961/d7ea00b-14fd27f8-c69b-40e7-8fb7-6cda686d6d48.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTUwY2IzYWUtZjRlNy00ODZlLTkwNTgtNzI0YzY2YmQ3OTYxXC9kN2VhMDBiLTE0ZmQyN2Y4LWM2OWItNDBlNy04ZmI3LTZjZGE2ODZkNmQ0OC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.HRCkruuwpdzWFJBif1kXVX2cAZCKMC_kf6x_WTeSH_k" alt="">
-      </div>
-    </div><!-- venasaur -->
-    <div class="pokemon fire">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="charmander">
-      <div class="cardcontent">
-        <h3>Charmander #004</h3>
-        <p class="cardp">It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.</p>
-      </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
-      </div>
-      <div class="type-icon type-fire">
-        <img class="pokemontype" src="https://36.media.tumblr.com/68879c0cd61fde0e6ac5aca46d0d04e5/tumblr_mmi88btyBi1spn836o5_400.png" alt="">
-      </div>
-    </div><!-- charmander -->
-    <div class="pokemon fire">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" alt="charmeleon">
-      <div class="cardcontent">
+    </div>  
+  </div> 
+<!-- Venusaur #003 -->
+  <div class="card"> 
+    <input type="checkbox" id="card3" class="more" aria-hidden="true">
+      <div class="content">
+        <div class="front">
+          <div class="top-card grass">
+          <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="">
+          </div>
+          <div class="bottom-card">
+          <h3>Venusaur #003</h3>
+          <p class="cardp">Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.</p>
+          <label for="card3" class="button" aria-hidden="true">More info &#8594;</label>
+          </div>
+        </div>
+        <div class="back">
+          <div class="name">
+                <h1>Venusaur</h1>
+                <div class="hp"></div>
+          </div>
+          <ul class="stats">
+                <li>Grass<br /><span class="info">Type</span></li>
+                <li>220.5 lbs<br /><span class="info">Weight</span></li>
+                <li>6' 7"<br /><span class="info">Height</span></li>
+          </ul>
+          <div class="facts">
+            <div class="split">
+              <div>
+                <h2>Common Location</h2>
+                <h4>Viridian City</h4>
+                <img src="https://cdn2.bulbagarden.net/upload/b/bd/Viridian_City_HGSS.png" alt="Viridian City">
+              </div>
+            </div>
+          </div>
+          <div class="weakness">
+              <h2>Weakness: Fire Psychic Flying Ice </h2>
+              <label for="card3" class="button return" aria-hidden="true">Go Back &#8594;</label>
+          </div>
+        </div>
+      </div>  
+  </div>   
+<!-- Charmander #004 -->
+  <div class="card"> 
+    <input type="checkbox" id="card4" class="more" aria-hidden="true">
+      <div class="content">
+        <div class="front">
+          <div class="top-card fire">
+          <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="">
+          </div>
+          <div class="bottom-card">
+          <h3>Charmander #004</h3>
+          <p class="cardp">t has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.</p>
+          <label for="card4" class="button" aria-hidden="true">More info &#8594;</label>
+          </div>
+        </div>
+        <div class="back">
+          <div class="name">
+                <h1>Charmander</h1>
+                <div class="hp"></div>
+          </div>
+          <ul class="stats">
+                <li>Fire<br /><span class="info">Type</span></li>
+                <li>18.7 lbs<br /><span class="info">Weight</span></li>
+                <li>2' 0"<br /><span class="info">Height</span></li>
+          </ul>
+          <div class="facts">
+            <div class="split">
+              <div>
+                <h2>Common Location</h2>
+                <h4>Route 3</h4>
+                <img src="https://cdn2.bulbagarden.net/upload/thumb/8/83/Kanto_Route_3_HGSS.png/799px-Kanto_Route_3_HGSS.png" alt="Route 3">
+              </div>
+            </div>
+          </div>
+          <div class="weakness">
+              <h2>Weakness: Water Ground Rock </h2>
+              <label for="card4" class="button return" aria-hidden="true">Go Back &#8594;</label>
+          </div>
+        </div>
+      </div>  
+  </div>  
+<!-- Charmeleon #005 -->
+<div class="card"> 
+  <input type="checkbox" id="card5" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Charmeleon #005</h3>
         <p class="cardp">It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.</p>
+        <label for="card5" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Charmeleon</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>41.9 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 3</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/thumb/8/83/Kanto_Route_3_HGSS.png/799px-Kanto_Route_3_HGSS.png" alt="Route 3">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Ground Rock </h2>
+            <label for="card5" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-fire">
-        <img class="pokemontype" src="https://36.media.tumblr.com/68879c0cd61fde0e6ac5aca46d0d04e5/tumblr_mmi88btyBi1spn836o5_400.png" alt="">
-      </div>
-    </div><!-- charmeleon -->
-    <div class="pokemon fire">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="charizard">
-      <div class="cardcontent">
+    </div>  
+</div>      
+<!-- Charizard #006 -->
+<div class="card"> 
+  <input type="checkbox" id="card6" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Charizard #006</h3>
         <p class="cardp">It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.</p>
+        <label for="card6" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Charizard</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>199.5 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 3</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/thumb/8/83/Kanto_Route_3_HGSS.png/799px-Kanto_Route_3_HGSS.png" alt="Route 3">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Electric Rock </h2>
+            <label for="card6" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-fire">
-        <img class="pokemontype" src="https://36.media.tumblr.com/68879c0cd61fde0e6ac5aca46d0d04e5/tumblr_mmi88btyBi1spn836o5_400.png" alt="">
-      </div>
-    </div><!-- charizard -->
-    <div class="pokemon water">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="squirtle">
-      <div class="cardcontent">
+    </div>  
+</div>       
+<!-- Squirtle #007 -->
+<div class="card"> 
+  <input type="checkbox" id="card7" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Squirtle #007</h3>
-        <p class="cardp">There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.</p>
+        <p class="cardp">When it retracts its long neck into its shell, it squirts out water with vigorous force.</p>
+        <label for="card7" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Squirtle</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>19.8 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 8"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Pallet Town</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/7/7b/Pallet_Town_HGSS.png" alt="Pallet Town">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric </h2>
+            <label for="card7" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-water">
-        <img class="pokemontype" src="https://40.media.tumblr.com/23fcc303266711c0e7fa2c6ecc506bbb/tumblr_mmi88btyBi1spn836o10_400.png" alt="">
-      </div>
-    </div> <!-- squirtle -->
-    <div class="pokemon water">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png" alt="wartortle">
-      <div class="cardcontent">
+    </div>  
+</div>     
+<!-- Wartortle #008 -->
+<div class="card"> 
+  <input type="checkbox" id="card8" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Wartortle #008</h3>
-        <p class="cardp">When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</p>
+        <p class="cardp">It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.</p>
+        <label for="card8" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Wartortle</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>49.6 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Pallet Town</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/7/7b/Pallet_Town_HGSS.png" alt="Pallet Town">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric </h2>
+            <label for="card8" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-water">
-        <img class="pokemontype" src="https://40.media.tumblr.com/23fcc303266711c0e7fa2c6ecc506bbb/tumblr_mmi88btyBi1spn836o10_400.png" alt="">
-      </div>
-    </div><!-- warturtle -->
-    <div class="pokemon water">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png" alt="blastoise">
-      <div class="cardcontent">
+    </div>  
+</div>    
+<!-- Blastoise #009 -->
+<div class="card"> 
+  <input type="checkbox" id="card9" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Blastoise #009</h3>
         <p class="cardp">It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.</p>
+        <label for="card9" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Blastoise</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>188.5 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Pallet Town</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/7/7b/Pallet_Town_HGSS.png" alt="Pallet Town">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric </h2>
+            <label for="card9" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-water">
-        <img class="pokemontype" src="https://40.media.tumblr.com/23fcc303266711c0e7fa2c6ecc506bbb/tumblr_mmi88btyBi1spn836o10_400.png" alt="">
-      </div>
-    </div><!-- blastoise -->
-    <div class="pokemon bug">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png" alt="caterpie">
-      <div class="cardcontent">
+    </div>  
+</div>       
+<!-- Caterpie #010 -->
+<div class="card"> 
+  <input type="checkbox" id="card10" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Caterpie #010</h3>
         <p class="cardp">For protection, it releases a horrible stench from the antenna on its head to drive away enemies.</p>
+        <label for="card10" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Caterpie</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Bug<br /><span class="info">Type</span></li>
+              <li>6.4 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Flying Rock </h2>
+            <label for="card10" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-bug">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Bug-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div> <!-- caterpie -->
-    <div class="pokemon bug">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png" alt="metapod">
-      <div class="cardcontent">
+    </div>  
+</div>  
+<!-- Metapod #011 -->
+<div class="card"> 
+  <input type="checkbox" id="card11" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Metapod #011</h3>
         <p class="cardp">It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack.</p>
+        <label for="card11" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Metapod</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Bug<br /><span class="info">Type</span></li>
+              <li>21.8 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Flying Rock </h2>
+            <label for="card11" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-bug">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Bug-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- metapod -->
-    <div class="pokemon bug">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png" alt="butterfree">
-      <div class="cardcontent">
+    </div>  
+</div>    
+<!-- Butterfree #012 -->
+<div class="card"> 
+  <input type="checkbox" id="card12" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Butterfree #012</h3>
         <p class="cardp">In battle, it flaps its wings at great speed to release highly toxic dust into the air.</p>
+        <label for="card12" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Butterfree</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Bug<br /><span class="info">Type</span></li>
+              <li>70.5 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 2</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/thumb/d/d0/Galar_Route_2_SwSh.png/800px-Galar_Route_2_SwSh.png" alt="Route 2">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Flying Electric Ice Rock </h2>
+            <label for="card12" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-bug">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Bug-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- butterfree -->
-    <div class="pokemon bug">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png" alt="weedle">
-      <div class="cardcontent">
+    </div>  
+</div>  
+<!-- Weedle #013 -->
+<div class="card"> 
+  <input type="checkbox" id="card13" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Weedle #013</h3>
-        <p class="cardp">Beware of the sharp stinger on its head. It hides in grass and bushes where it eats <br>leaves.</p>
+        <p class="cardp">Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves.</p>
+        <label for="card13" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Weedle</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Bug<br /><span class="info">Type</span></li>
+              <li>7.1 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 2</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/thumb/d/d0/Galar_Route_2_SwSh.png/800px-Galar_Route_2_SwSh.png" alt="Route 2">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Rock </h2>
+            <label for="card13" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-bug">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Bug-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div> <!-- weedle -->
-    <div class="pokemon bug">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png" alt="kakuna">
-      <div class="cardcontent">
+    </div>  
+</div> 
+<!-- Kakuna #014 -->
+<div class="card"> 
+  <input type="checkbox" id="card14" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Kakuna #014</h3>
         <p class="cardp">Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy.</p>
+        <label for="card14" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Kakuna</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Bug<br /><span class="info">Type</span></li>
+              <li>22.0 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Rock </h2>
+            <label for="card14" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-bug">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Bug-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- kakuna -->
-    <div class="pokemon bug">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png" alt="beedrill">
-      <div class="cardcontent">
+    </div>  
+</div> 
+<!-- Beedrill #015 -->
+<div class="card"> 
+  <input type="checkbox" id="card15" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Beedrill #015</h3>
         <p class="cardp">It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.</p>
+        <label for="card15" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Beedrill</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Bug<br /><span class="info">Type</span></li>
+              <li>65.0 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Rock </h2>
+            <label for="card15" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-bug">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Bug-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- beedrill -->
-    <div class="pokemon normal">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="pidgey">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Pidgey #016 -->
+<div class="card"> 
+  <input type="checkbox" id="card16" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Pidgey #016</h3>
         <p class="cardp">Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.</p>
+        <label for="card16" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Pidgey</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>4.0 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 1</h4>
+              <img src="https://www.serebii.net/pokearth/maps/galar/1.jpg" alt="Route 1">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Electric Ice Rock </h2>
+            <label for="card16" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-normal">
-        <img class="pokemontype" src="https://art.pixilart.com/4ceb356b3880124.png" alt="">
-      </div>
-    </div><!-- pidgey -->
-    <div class="pokemon normal">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png" alt="pidgeotto">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Pidgeotto #017 -->
+<div class="card"> 
+  <input type="checkbox" id="card17" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Pidgeotto #017</h3>
         <p class="cardp">This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.</p>
+        <label for="card17" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Pidgeotto</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>66.1 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Electric Ice Rock </h2>
+            <label for="card17" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-normal">
-        <img class="pokemontype" src="https://art.pixilart.com/4ceb356b3880124.png" alt="">
-      </div>
-    </div><!-- pigeotto-->
-    <div class="pokemon normal">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png" alt="pidgeot">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Pidgeot #018 -->
+<div class="card"> 
+  <input type="checkbox" id="card18" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Pidgeot #018</h3>
         <p class="cardp">This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.</p>
+        <label for="card18" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Pidgeot</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>87.1 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Electric Ice Rock </h2>
+            <label for="card18" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-normal">
-        <img class="pokemontype" src="https://art.pixilart.com/4ceb356b3880124.png" alt="">
-      </div>
-    </div><!-- pidgeot -->
-    <div class="pokemon normal">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png" alt="rattata">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Rattata #019 -->
+<div class="card"> 
+  <input type="checkbox" id="card19" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Rattata #019</h3>
         <p class="cardp">Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.</p>
+        <label for="card19" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Rattata</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>7.7 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fighting </h2>
+            <label for="card19" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-normal">
-        <img class="pokemontype" src="https://art.pixilart.com/4ceb356b3880124.png" alt="">
-      </div>
-    </div><!-- rattata -->
-    <div class="pokemon normal">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png" alt="raticate">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Raticate #020-->
+<div class="card"> 
+  <input type="checkbox" id="card20" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Raticate #020</h3>
         <p class="cardp">Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.</p>
+        <label for="card20" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Raticate</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>40.8 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fighting </h2>
+            <label for="card20" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-normal">
-        <img class="pokemontype" src="https://art.pixilart.com/4ceb356b3880124.png" alt="">
-      </div>
-    </div><!-- raticate -->
-    <div class="pokemon normal">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/021.png" alt="spearow">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Spearow #021 -->
+<div class="card"> 
+  <input type="checkbox" id="card21" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/021.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Spearow #021</h3>
         <p class="cardp">Inept at flying high. However, it can fly around very fast to protect its territory.</p>
+        <label for="card21" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Spearow</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>4.4 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Electric Ice Rock </h2>
+            <label for="card21" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-normal">
-        <img class="pokemontype" src="https://art.pixilart.com/4ceb356b3880124.png" alt="">
-      </div>
-    </div><!-- spearow -->
-    <div class="pokemon normal">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/022.png" alt="fearow">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Fearow #022 -->
+<div class="card"> 
+  <input type="checkbox" id="card22" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/022.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Fearow #022</h3>
         <p class="cardp">A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly.</p>
+        <label for="card22" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Fearow</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>83.8 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Electric Ice Rock </h2>
+            <label for="card22" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-normal">
-        <img class="pokemontype" src="https://art.pixilart.com/4ceb356b3880124.png" alt="">
-      </div>
-    </div><!-- fearow -->
-    <div class="pokemon poison">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png" alt="ekans">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Ekans #023 -->
+<div class="card"> 
+  <input type="checkbox" id="card23" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Ekans #023</h3>
         <p class="cardp">The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.</p>
+        <label for="card23" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Ekans</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>15.2 lbs<br /><span class="info">Weight</span></li>
+              <li>6' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground </h2>
+            <label for="card23" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-poison">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1200px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- ekans -->
-    <div class="pokemon poison">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/024.png" alt="arbok">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Arbok #024 -->
+<div class="card"> 
+  <input type="checkbox" id="card24" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/024.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Arbok #024</h3>
         <p class="cardp">The frightening patterns on its belly have been studied. Six variations have been confirmed.</p>
+        <label for="card24" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Arbok</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>143.3 lbs<br /><span class="info">Weight</span></li>
+              <li>11' 6"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground </h2>
+            <label for="card24" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-poison">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1200px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- arbok -->
-    <div class="pokemon electric">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="pikachu">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Pikachu #025 -->
+<div class="card"> 
+  <input type="checkbox" id="card25" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card electric">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Pikachu #025</h3>
         <p class="cardp">Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.</p>
+        <label for="card25" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Pikachu</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Electric<br /><span class="info">Type</span></li>
+              <li>13.2 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ground </h2>
+            <label for="card25" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-electric">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Electric-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- pikachu -->
-    <div class="pokemon electric">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png" alt="raichu">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Raichu #026 -->
+<div class="card"> 
+  <input type="checkbox" id="card26" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card electric">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Raichu #026</h3>
         <p class="cardp">Its long tail serves as a ground to protect itself from its own high-voltage power.</p>
+        <label for="card26" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Raichu</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Electric<br /><span class="info">Type</span></li>
+              <li>66.1 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ground </h2>
+            <label for="card26" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-electric">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Electric-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- raichu -->
-    <div class="pokemon ground">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png" alt="sandshrew">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Sandshrew #027 -->
+<div class="card"> 
+  <input type="checkbox" id="card27" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card ground">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Sandshrew #027</h3>
-        <p class="cardp">It loves to bathe in grit. By sand bathing, the Pokémon rids itself of dirt and moisture clinging to its body.</p>
+        <p class="cardp">It loves to bathe in the grit of dry, sandy areas. By sand bathing, the Pokémon rids itself of dirt and moisture clinging to its body.</p>
+        <label for="card27" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Sandshrew</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Ground<br /><span class="info">Type</span></li>
+              <li>26.5 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Grass Ice </h2>
+            <label for="card27" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-ground">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Ground-type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- sandshrew -->
-    <div class="pokemon ground">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/028.png" alt="sandslash">
-      <div class="cardcontent">
-        <h3>Sandslash #028</h3>
+    </div>  
+</div>
+<!-- Sandslash #028 -->
+<div class="card"> 
+  <input type="checkbox" id="card28" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card ground">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/028.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Sandshrew #028</h3>
         <p class="cardp">The drier the area Sandslash lives in, the harder and smoother the Pokémon’s spikes will feel when touched.</p>
+        <label for="card28" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Sandslash</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Ground<br /><span class="info">Type</span></li>
+              <li>65.0 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Grass Ice </h2>
+            <label for="card28" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-ground">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Ground-type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- sandslash -->
-    <div class="pokemon poison">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png" alt="nidoran1">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Nidoran♀ #029 -->
+<div class="card"> 
+  <input type="checkbox" id="card29" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Nidoran♀ #029</h3>
         <p class="cardp">Females are more sensitive to smells than males. While foraging, they’ll use their whiskers to check wind direction and stay downwind of predators.</p>
+        <label for="card29" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Nidoran♀</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>15.4 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground </h2>
+            <label for="card29" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-poison">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1200px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- nidoran1 -->
-    <div class="pokemon poison">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png" alt="nidorina">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Nidorina #030 -->
+<div class="card"> 
+  <input type="checkbox" id="card30" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Nidorina #030</h3>
         <p class="cardp">The horn on its head has atrophied. It’s thought that this happens so Nidorina’s children won’t get poked while their mother is feeding them.</p>
+        <label for="card30" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Nidorina</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>44.1 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground </h2>
+            <label for="card30" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-poison">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1200px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- nidorina -->
-    <div class="pokemon poison">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png" alt="nidoqueen">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Nidoqueen #031 -->
+<div class="card"> 
+  <input type="checkbox" id="card31" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Nidoqueen #031</h3>
         <p class="cardp">Nidoqueen is better at defense than offense. With scales like armor, this Pokémon will shield its children from any kind of attack.</p>
+        <label for="card31" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Nidoqueen</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>132.3 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Psychic Ice Ground </h2>
+            <label for="card31" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-poison">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1200px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- nidoqueen -->
-    <div class="pokemon poison">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png" alt="nidoran2">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Nidoran♂ #032 -->
+<div class="card"> 
+  <input type="checkbox" id="card32" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Nidoran♂ #032</h3>
         <p class="cardp">The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears.</p>
+        <label for="card32" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Nidoran♂</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>19.8 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 8"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground </h2>
+            <label for="card32" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-poison">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1200px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- nidoran2 -->
-    <div class="pokemon poison">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/033.png" alt="nidorino">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!--Nidorino #033 -->
+<div class="card"> 
+  <input type="checkbox" id="card33" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/033.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Nidorino #033</h3>
         <p class="cardp">With a horn that’s harder than diamond, this Pokémon goes around shattering boulders as it searches for a moon stone.</p>
+        <label for="card33" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Nidorino</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>43.0 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground </h2>
+            <label for="card33" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-poison">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1200px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- nidorino -->
-    <div class="pokemon poison">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/034.png" alt="nidoking">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Nidoking #034 -->
+<div class="card"> 
+  <input type="checkbox" id="card34" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/034.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Nidoking #034</h3>
         <p class="cardp">When it goes on a rampage, it’s impossible to control. But in the presence of a Nidoqueen it’s lived with for a long time, Nidoking calms down.</p>
+        <label for="card34" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Nidoking</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>136.7 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Psychic Ice Ground </h2>
+            <label for="card34" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-poison">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1200px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- nidoking -->
-    <div class="pokemon fairy">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png" alt="clefairy">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Clefairy #035 -->
+<div class="card"> 
+  <input type="checkbox" id="card35" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fairy">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Clefairy #035</h3>
         <p class="cardp">It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.</p>
+        <label for="card35" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Clefairy</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fairy<br /><span class="info">Type</span></li>
+              <li>16.5 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Poison</h2>
+            <label for="card35" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-fairy">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg/1024px-Pok%C3%A9mon_Fairy_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- clefairy -->
-    <div class="pokemon fairy">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/036.png" alt="clefable">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Clefable #036 -->
+<div class="card"> 
+  <input type="checkbox" id="card36" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fairy">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/036.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Clefable #036</h3>
-        <p class="cardp">A timid fairy Pokémon that is rarely seen, it will run and hide the moment it senses people.</p>
+        <p class="cardp">It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.</p>
+        <label for="card36" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Clefable</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fairy<br /><span class="info">Type</span></li>
+              <li>88.2 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Poison</h2>
+            <label for="card36" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-fairy">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg/1024px-Pok%C3%A9mon_Fairy_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- clefable -->
-    <div class="pokemon fire">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png" alt="vuplix">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Vulpix #037 -->
+<div class="card"> 
+  <input type="checkbox" id="card37" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Vulpix #037</h3>
         <p class="cardp">While young, it has six gorgeous tails. When it grows, several new tails are sprouted.</p>
+        <label for="card37" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Vuplix</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>21.8 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Ground Rock</h2>
+            <label for="card37" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-fire">
-        <img class="pokemontype" src="https://36.media.tumblr.com/68879c0cd61fde0e6ac5aca46d0d04e5/tumblr_mmi88btyBi1spn836o5_400.png" alt="">
-      </div>
-    </div><!-- vuplix -->
-    <div class="pokemon fire">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png" alt="charmeleon">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Ninetales #038 -->
+<div class="card"> 
+  <input type="checkbox" id="card38" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Ninetales #038</h3>
         <p class="cardp">It is said to live 1,000 years, and each of its tails is loaded with supernatural powers.</p>
+        <label for="card38" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Ninetales</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>43.9 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Ground Rock</h2>
+            <label for="card38" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-fire">
-        <img class="pokemontype" src="https://36.media.tumblr.com/68879c0cd61fde0e6ac5aca46d0d04e5/tumblr_mmi88btyBi1spn836o5_400.png" alt="">
-      </div>
-    </div><!-- ninetales -->
-    <div class="pokemon fairy">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png" alt="jigglypuff">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Jigglypuff #039 -->
+<div class="card"> 
+  <input type="checkbox" id="card39" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fairy">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Jigglypuff #039</h3>
         <p class="cardp">Jigglypuff has top-notch lung capacity, even by comparison to other Pokémon. It won’t stop singing its lullabies until its foes fall asleep.</p>
+        <label for="card39" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Jigglypuff</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fairy<br /><span class="info">Type</span></li>
+              <li>12.1 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 8"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Poison</h2>
+            <label for="card39" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-fairy">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg/1024px-Pok%C3%A9mon_Fairy_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- jigglypuff -->
-    <div class="pokemon fairy">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/040.png" alt="wigglytuff">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Wigglytuff #040 -->
+<div class="card"> 
+  <input type="checkbox" id="card40" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fairy">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/040.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Wigglytuff #040</h3>
-        <p class="cardp">A timid fairy Pokémon that is rarely seen, it will run and hide the moment it senses people.</p>
+        <p class="cardp">The more air it takes in, the more it inflates. If opponents catch it in a bad mood, it will inflate itself to an enormous size to intimidate them.</p>
+        <label for="card40" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Wigglytuff</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fairy<br /><span class="info">Type</span></li>
+              <li>26.5 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Poison</h2>
+            <label for="card40" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-fairy">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg/1024px-Pok%C3%A9mon_Fairy_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- wigglytuff -->
-    <div class="pokemon poison">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/041.png" alt="zubat">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Zubat #041 -->
+<div class="card"> 
+  <input type="checkbox" id="card41" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/041.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Zubat #041</h3>
         <p class="cardp">It emits ultrasonic waves from its mouth to check its surroundings. Even in tight caves, Zubat flies around with skill.</p>
+        <label for="card41" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Zubat</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>16.5 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Electric Ice Rock </h2>
+            <label for="card41" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-poison">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1200px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- zubat -->
-    <div class="pokemon poison">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/042.png" alt="golbat">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Golbat #042 -->
+<div class="card"> 
+  <input type="checkbox" id="card42" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/042.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Golbat #042</h3>
         <p class="cardp">It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered.</p>
+        <label for="card42" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Golbat</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>121.3 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Electric Ice Rock </h2>
+            <label for="card42" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-poison">
-        <img class="pokemontype" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1200px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="">
-
-      </div>
-    </div> <!-- golbat -->
-    <div class="pokemon grass">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/043.png" alt="oddish">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Oddish #043 -->
+<div class="card"> 
+  <input type="checkbox" id="card43" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card grass">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/043.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Oddish #043</h3>
         <p class="cardp">If exposed to moonlight, it starts to move. It roams far and wide at night to scatter its seeds.</p>
+        <label for="card43" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Oddish</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>11.9 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 8"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Ice</h2>
+            <label for="card43" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-grass">
-        <img class="pokemontype" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/950cb3ae-f4e7-486e-9058-724c66bd7961/d7ea00b-14fd27f8-c69b-40e7-8fb7-6cda686d6d48.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTUwY2IzYWUtZjRlNy00ODZlLTkwNTgtNzI0YzY2YmQ3OTYxXC9kN2VhMDBiLTE0ZmQyN2Y4LWM2OWItNDBlNy04ZmI3LTZjZGE2ODZkNmQ0OC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.HRCkruuwpdzWFJBif1kXVX2cAZCKMC_kf6x_WTeSH_k" alt="">
-      </div>
-    </div> <!-- oddish -->
-    <div class="pokemon grass">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/044.png" alt="gloom">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Gloom #044 -->
+<div class="card"> 
+  <input type="checkbox" id="card44" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card grass">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/044.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Gloom #044</h3>
         <p class="cardp">Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles.</p>
+        <label for="card44" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Gloom</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>19.0 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Ice</h2>
+            <label for="card44" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-grass">
-        <img class="pokemontype" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/950cb3ae-f4e7-486e-9058-724c66bd7961/d7ea00b-14fd27f8-c69b-40e7-8fb7-6cda686d6d48.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTUwY2IzYWUtZjRlNy00ODZlLTkwNTgtNzI0YzY2YmQ3OTYxXC9kN2VhMDBiLTE0ZmQyN2Y4LWM2OWItNDBlNy04ZmI3LTZjZGE2ODZkNmQ0OC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.HRCkruuwpdzWFJBif1kXVX2cAZCKMC_kf6x_WTeSH_k" alt="">
-      </div>
-    </div><!-- gloom -->
-    <div class="pokemon grass">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/045.png" alt="vileplume">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Vileplume #045 -->
+<div class="card"> 
+  <input type="checkbox" id="card45" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card grass">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/045.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Vileplume #045</h3>
         <p class="cardp">It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.</p>
+        <label for="card45" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Vileplume</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>41.0 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Ice</h2>
+            <label for="card45" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-grass">
-        <img class="pokemontype" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/950cb3ae-f4e7-486e-9058-724c66bd7961/d7ea00b-14fd27f8-c69b-40e7-8fb7-6cda686d6d48.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTUwY2IzYWUtZjRlNy00ODZlLTkwNTgtNzI0YzY2YmQ3OTYxXC9kN2VhMDBiLTE0ZmQyN2Y4LWM2OWItNDBlNy04ZmI3LTZjZGE2ODZkNmQ0OC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.HRCkruuwpdzWFJBif1kXVX2cAZCKMC_kf6x_WTeSH_k" alt="">
-      </div>
-    </div><!-- vileplume -->
-    <div class="pokemon bug">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/046.png" alt="paras">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Paras #046 -->
+<div class="card"> 
+  <input type="checkbox" id="card46" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/046.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Paras #046</h3>
         <p class="cardp">Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition.</p>
+        <label for="card46" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Paras</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>11.9 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Flying Ice Poision Rock Bug</h2>
+            <label for="card46" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-bug">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Bug-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- paras -->
-    <div class="pokemon bug">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/047.png" alt="parasect">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Parasect #047 -->
+<div class="card"> 
+  <input type="checkbox" id="card47" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/047.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Parasect #047</h3>
         <p class="cardp">The bug host is drained of energy by the mushroom on its back. The mushroom appears to do all the thinking.</p>
+        <label for="card47" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Parasect</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>65 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Flying Ice Poision Rock Bug</h2>
+            <label for="card47" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-bug">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Bug-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div> <!-- parasect -->
-    <div class="pokemon bug">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/048.png" alt="venonat">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Venonat #048 -->
+<div class="card"> 
+  <input type="checkbox" id="card48" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/048.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Venonat #048</h3>
         <p class="cardp">Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes.</p>
+        <label for="card48" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Venonat</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>66.1 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Rock</h2>
+            <label for="card48" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-bug">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Bug-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- venonat -->
-    <div class="pokemon bug">
-      <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/049.png" alt="venomoth">
-      <div class="cardcontent">
+    </div>  
+</div>
+<!-- Venomoth #049 -->
+<div class="card"> 
+  <input type="checkbox" id="card49" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/049.png" alt="">
+        </div>
+        <div class="bottom-card">
         <h3>Venomoth #049</h3>
         <p class="cardp">The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact.</p>
+        <label for="card49" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>More info</h5>
-        <a href="#"><i class="cardinfo" style="font-size:24px"></i></a>
+      <div class="back">
+        <div class="name">
+              <h1>Venomoth</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>27.6 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Rock</h2>
+            <label for="card49" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
       </div>
-      <div class="type-icon type-bug">
-        <img class="pokemontype" src="https://img.rankedboost.com/wp-content/uploads/2019/11/Bug-Type-Pokemon-Sword-and-Shield.png" alt="">
-      </div>
-    </div><!-- venomoth -->
+    </div>  
+</div>
+
+
+
+
+
+ 
+
+
+
     <div class="pokemon ground">
       <img class="cardimg" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/050.png" alt="diglett">
       <div class="cardcontent">
@@ -2185,9 +3455,11 @@
       <div class="type-icon type-psychic">
         <img class="pokemontype" src="http://41.media.tumblr.com/db0c2938524dde79f0ba5570377a3bc9/tumblr_mmi88btyBi1spn836o9_400.png" alt="">
       </div>
-    </div><!-- mew-->
+    </div><!-- mew -->
+    cc
 
   </main>
 </body>
-
+<script src="https://kit.fontawesome.com/bd274f38ed.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>

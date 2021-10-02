@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,40 +7,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_theme.css" id="theme-link">
 </head>
 
 <body>
 
-  <header>
+<header>
     <div class="heading">
       <div class="logo-container">
         <img src="https://img.pngio.com/gotta-catch-em-all-transparent-pokemon-logo-vector-clipart-psd-pokemon-logo-clipart-700_338.png" alt="Pokemon Logo" class="logo">
       </div>
     </div>
-  </header>
+</header>
 
-  <nav class="sidebar-container">
-    <ul class="sidebar">
-      <a href="">
-        <li><img src="https://cdn.bulbagarden.net/upload/4/4b/Pok%C3%A9dex_logo.png" alt="" class="pokedex"></li>
-      </a>
+<nav class="sidebar-container">
+  <ul class="sidebar">
+     <a href="">
+      <li><img src="https://cdn.bulbagarden.net/upload/4/4b/Pok%C3%A9dex_logo.png" alt="" class="pokedex"></li>
+    </a>
       <div class="search">
         <input type="text" id="searchbar" onkeyup="searchPokemon()" placeholder="Who's that Pokemon?" class="search-button">
         <button class="thebutton"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Pokeball.PNG"></button>
-
-
       </div>
-      <a href="">
-        <li class="sidelink">Generation 1</li>
-      </a>
-      <a href="">
-        <li class="sidelink">Generation 4</li>
-      </a>
-      <a href="">
-        <li class="sidelink">Generation 3</li>
-      </a>
-      <li><img src="https://freepngimg.com/thumb/pokemon/37475-6-pikachu-transparent-image.png" alt="" class="sidebar-pic"></li>
-      <p class="copyright">Created by @mikeyyup & @techtilis</p>
+    <h1 class="filter-title">FILTER BY TYPE</h1>
+  <div class="toggle-by-type">
+
+
+<!-- GRASS -->
+<div class="switch-box">     
+        <div class="can-toggle switch grass-type" >         
+          <input id="e1" type="checkbox" class="checkedoff">      
+          <label for="e1" id="grass">
+            <div class="can-toggle__switch" data-checked="Grass" data-unchecked="Off"></div>
+          </label>
+        </div>
+</div>
+<!-- FIRE -->
+<div class="switch-box">
+        <div class="can-toggle switch fire-type">
+          <input id="e2" type="checkbox" class="checkedoff">
+          <label for="e2" id="fire">
+            <div class="can-toggle__switch" data-checked="Fire" data-unchecked="Off"></div>
+          </label>
+        </div>
+</div>
+<!-- WATER -->
+<div class="switch-box">
+        <div class="can-toggle switch water-type">
+          <input id="e3" type="checkbox" class="checkedoff">
+          <label for="e3">
+            <div class="can-toggle__switch" data-checked="Water" data-unchecked="Off"></div>
+          </label>
+        </div>
+</div>
+<!-- BUG -->
+<div class="switch-box">
+        <div class="can-toggle switch bug-type">
+          <input id="e4" type="checkbox" class="checkedoff">
+          <label for="e4">
+            <div class="can-toggle__switch" data-checked="Bug" data-unchecked="Off"></div>
+          </label>
+        </div>
+</div>
+<!-- NORMAL -->
+<div class="switch-box">
+        <div class="can-toggle switch normal-type">
+          <input id="e5" type="checkbox" class="checkedoff">
+          <label for="e5">
+            <div class="can-toggle__switch" data-checked="Normal" data-unchecked="Off"></div>
+          </label>
+        </div>
+</div>
+<!-- POISON -->
+<div class="switch-box">
+        <div class="can-toggle switch poison-type">
+          <input id="e6" type="checkbox" class="checkedoff">
+          <label for="e6">
+        <div class="can-toggle__switch" data-checked="Poison" data-unchecked="Off"></div>
+        </label>
+        </div>
+</div>
+<!-- ELECTRIC -->
+<div class="switch-box">
+  <div class="can-toggle switch electric-type">
+    <input id="e7" type="checkbox" class="checkedoff">
+    <label for="e7">
+  <div class="can-toggle__switch" data-checked="Electric" data-unchecked="Off"></div>
+  </label>
+  </div>
+</div>
+<!-- GROUND -->
+<div class="switch-box">
+  <div class="can-toggle switch ground-type">
+    <input id="e8" type="checkbox" class="checkedoff">
+    <label for="e8">
+  <div class="can-toggle__switch" data-checked="Ground" data-unchecked="Off"></div>
+  </label>
+  </div>
+</div>
+<!-- FIGHTING -->
+<div class="switch-box">
+  <div class="can-toggle switch fighting-type">
+    <input id="e9" type="checkbox" class="checkedoff">
+    <label for="e9">
+  <div class="can-toggle__switch" data-checked="Fighting" data-unchecked="Off"></div>
+  </label>
+  </div>
+</div>
+<!-- FAIRY -->
+<div class="switch-box">
+  <div class="can-toggle switch fairy-type">
+    <input id="e10" type="checkbox" class="checkedoff">
+    <label for="e10">
+  <div class="can-toggle__switch" data-checked="Fairy" data-unchecked="Off"></div>
+  </label>
+  </div>
+</div>
+<!-- PSYCHIC -->
+<div class="switch-box">
+  <div class="can-toggle switch psychic-type">
+    <input id="e11" type="checkbox" class="checkedoff">
+    <label for="e11">
+  <div class="can-toggle__switch" data-checked="Psychic" data-unchecked="Off"></div>
+  </label>
+  </div>
+</div>
+<!-- ROCK -->
+<div class="switch-box">
+  <div class="can-toggle switch rock-type">
+    <input id="e12" type="checkbox" class="checkedoff">
+    <label for="e12">
+  <div class="can-toggle__switch" data-checked="Rock" data-unchecked="Off"></div>
+  </label>
+  </div>
+</div>
+<!-- ICE -->
+<div class="switch-box">
+  <div class="can-toggle switch ice-type">
+    <input id="e13" type="checkbox" class="checkedoff">
+    <label for="e13">
+  <div class="can-toggle__switch" data-checked="Ice" data-unchecked="Off"></div>
+  </label>
+  </div>
+</div>
+<!-- DRAGON -->
+<div class="switch-box">
+  <div class="can-toggle switch dragon-type">
+    <input id="e14" type="checkbox" class="checkedoff">
+    <label for="e14">
+  <div class="can-toggle__switch" data-checked="Dragon" data-unchecked="Off"></div>
+  </label>
+  </div>
+</div>
+
+
+  </div>
+
+
+
+
+      
+      <!-- <li><img src="https://freepngimg.com/thumb/pokemon/37475-6-pikachu-transparent-image.png" alt="" class="sidebar-pic"></li> -->
+      <!-- <p class="copyright">Created by @mikeyyup & @techtilis</p> -->
+      <button id="dark">Click here to toggle Dark Mode</button>
     </ul>
 
   </nav>
@@ -48,7 +177,7 @@
 <main class="card-container">
 
 <!-- Bulbasaur #001 -->
-  <div class="card"> 
+  <div class="card grasscard"> 
       <input type="checkbox" id="card1" class="more" aria-hidden="true">
         <div class="content">
           <div class="front">
@@ -88,7 +217,7 @@
         </div>  
   </div>
 <!-- Ivysaur #002 -->
-  <div class="card"> 
+  <div class="card grasscard"> 
   <input type="checkbox" id="card2" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -128,7 +257,7 @@
     </div>  
   </div> 
 <!-- Venusaur #003 -->
-  <div class="card"> 
+  <div class="card grasscard"> 
     <input type="checkbox" id="card3" class="more" aria-hidden="true">
       <div class="content">
         <div class="front">
@@ -168,7 +297,7 @@
       </div>  
   </div>   
 <!-- Charmander #004 -->
-  <div class="card"> 
+  <div class="card firecard"> 
     <input type="checkbox" id="card4" class="more" aria-hidden="true">
       <div class="content">
         <div class="front">
@@ -208,7 +337,7 @@
       </div>  
   </div>  
 <!-- Charmeleon #005 -->
-<div class="card"> 
+<div class="card firecard"> 
   <input type="checkbox" id="card5" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -248,7 +377,7 @@
     </div>  
 </div>      
 <!-- Charizard #006 -->
-<div class="card"> 
+<div class="card firecard"> 
   <input type="checkbox" id="card6" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -288,7 +417,7 @@
     </div>  
 </div>       
 <!-- Squirtle #007 -->
-<div class="card"> 
+<div class="card watercard"> 
   <input type="checkbox" id="card7" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -328,7 +457,7 @@
     </div>  
 </div>     
 <!-- Wartortle #008 -->
-<div class="card"> 
+<div class="card watercard"> 
   <input type="checkbox" id="card8" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -368,7 +497,7 @@
     </div>  
 </div>    
 <!-- Blastoise #009 -->
-<div class="card"> 
+<div class="card watercard"> 
   <input type="checkbox" id="card9" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -408,7 +537,7 @@
     </div>  
 </div>       
 <!-- Caterpie #010 -->
-<div class="card"> 
+<div class="card bugcard"> 
   <input type="checkbox" id="card10" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -448,7 +577,7 @@
     </div>  
 </div>  
 <!-- Metapod #011 -->
-<div class="card"> 
+<div class="card bugcard"> 
   <input type="checkbox" id="card11" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -488,7 +617,7 @@
     </div>  
 </div>    
 <!-- Butterfree #012 -->
-<div class="card"> 
+<div class="card bugcard"> 
   <input type="checkbox" id="card12" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -528,7 +657,7 @@
     </div>  
 </div>  
 <!-- Weedle #013 -->
-<div class="card"> 
+<div class="card bugcard"> 
   <input type="checkbox" id="card13" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -568,7 +697,7 @@
     </div>  
 </div> 
 <!-- Kakuna #014 -->
-<div class="card"> 
+<div class="card bugcard"> 
   <input type="checkbox" id="card14" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -608,7 +737,7 @@
     </div>  
 </div> 
 <!-- Beedrill #015 -->
-<div class="card"> 
+<div class="card bugcard"> 
   <input type="checkbox" id="card15" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -648,7 +777,7 @@
     </div>  
 </div>
 <!-- Pidgey #016 -->
-<div class="card"> 
+<div class="card normalcard"> 
   <input type="checkbox" id="card16" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -688,7 +817,7 @@
     </div>  
 </div>
 <!-- Pidgeotto #017 -->
-<div class="card"> 
+<div class="card normalcard"> 
   <input type="checkbox" id="card17" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -728,7 +857,7 @@
     </div>  
 </div>
 <!-- Pidgeot #018 -->
-<div class="card"> 
+<div class="card normalcard"> 
   <input type="checkbox" id="card18" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -768,7 +897,7 @@
     </div>  
 </div>
 <!-- Rattata #019 -->
-<div class="card"> 
+<div class="card normalcard"> 
   <input type="checkbox" id="card19" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -808,7 +937,7 @@
     </div>  
 </div>
 <!-- Raticate #020-->
-<div class="card"> 
+<div class="card normalcard"> 
   <input type="checkbox" id="card20" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -848,7 +977,7 @@
     </div>  
 </div>
 <!-- Spearow #021 -->
-<div class="card"> 
+<div class="card normalcard"> 
   <input type="checkbox" id="card21" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -888,7 +1017,7 @@
     </div>  
 </div>
 <!-- Fearow #022 -->
-<div class="card"> 
+<div class="card normalcard"> 
   <input type="checkbox" id="card22" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -928,7 +1057,7 @@
     </div>  
 </div>
 <!-- Ekans #023 -->
-<div class="card"> 
+<div class="card poisoncard"> 
   <input type="checkbox" id="card23" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -968,7 +1097,7 @@
     </div>  
 </div>
 <!-- Arbok #024 -->
-<div class="card"> 
+<div class="card poisoncard"> 
   <input type="checkbox" id="card24" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1008,7 +1137,7 @@
     </div>  
 </div>
 <!-- Pikachu #025 -->
-<div class="card"> 
+<div class="card electriccard"> 
   <input type="checkbox" id="card25" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1048,7 +1177,7 @@
     </div>  
 </div>
 <!-- Raichu #026 -->
-<div class="card"> 
+<div class="card electriccard"> 
   <input type="checkbox" id="card26" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1088,7 +1217,7 @@
     </div>  
 </div>
 <!-- Sandshrew #027 -->
-<div class="card"> 
+<div class="card groundcard"> 
   <input type="checkbox" id="card27" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1128,7 +1257,7 @@
     </div>  
 </div>
 <!-- Sandslash #028 -->
-<div class="card"> 
+<div class="card groundcard"> 
   <input type="checkbox" id="card28" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1168,7 +1297,7 @@
     </div>  
 </div>
 <!-- Nidoran♀ #029 -->
-<div class="card"> 
+<div class="card poisoncard"> 
   <input type="checkbox" id="card29" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1208,7 +1337,7 @@
     </div>  
 </div>
 <!-- Nidorina #030 -->
-<div class="card"> 
+<div class="card poisoncard"> 
   <input type="checkbox" id="card30" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1248,7 +1377,7 @@
     </div>  
 </div>
 <!-- Nidoqueen #031 -->
-<div class="card"> 
+<div class="card poisoncard"> 
   <input type="checkbox" id="card31" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1288,7 +1417,7 @@
     </div>  
 </div>
 <!-- Nidoran♂ #032 -->
-<div class="card"> 
+<div class="card poisoncard"> 
   <input type="checkbox" id="card32" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1328,7 +1457,7 @@
     </div>  
 </div>
 <!--Nidorino #033 -->
-<div class="card"> 
+<div class="card poisoncard"> 
   <input type="checkbox" id="card33" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1368,7 +1497,7 @@
     </div>  
 </div>
 <!-- Nidoking #034 -->
-<div class="card"> 
+<div class="card poisoncard"> 
   <input type="checkbox" id="card34" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1408,7 +1537,7 @@
     </div>  
 </div>
 <!-- Clefairy #035 -->
-<div class="card"> 
+<div class="card fairycard"> 
   <input type="checkbox" id="card35" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1448,7 +1577,7 @@
     </div>  
 </div>
 <!-- Clefable #036 -->
-<div class="card"> 
+<div class="card fairycard"> 
   <input type="checkbox" id="card36" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1488,7 +1617,7 @@
     </div>  
 </div>
 <!-- Vulpix #037 -->
-<div class="card"> 
+<div class="card firecard"> 
   <input type="checkbox" id="card37" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1528,7 +1657,7 @@
     </div>  
 </div>
 <!-- Ninetales #038 -->
-<div class="card"> 
+<div class="card firecard"> 
   <input type="checkbox" id="card38" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1568,7 +1697,7 @@
     </div>  
 </div>
 <!-- Jigglypuff #039 -->
-<div class="card"> 
+<div class="card fairycard"> 
   <input type="checkbox" id="card39" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1608,7 +1737,7 @@
     </div>  
 </div>
 <!-- Wigglytuff #040 -->
-<div class="card"> 
+<div class="card fairycard"> 
   <input type="checkbox" id="card40" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1648,7 +1777,7 @@
     </div>  
 </div>
 <!-- Zubat #041 -->
-<div class="card"> 
+<div class="card poisoncard"> 
   <input type="checkbox" id="card41" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1688,7 +1817,7 @@
     </div>  
 </div>
 <!-- Golbat #042 -->
-<div class="card"> 
+<div class="card poisoncard"> 
   <input type="checkbox" id="card42" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1728,7 +1857,7 @@
     </div>  
 </div>
 <!-- Oddish #043 -->
-<div class="card"> 
+<div class="card grasscard"> 
   <input type="checkbox" id="card43" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1768,7 +1897,7 @@
     </div>  
 </div>
 <!-- Gloom #044 -->
-<div class="card"> 
+<div class="card grasscard"> 
   <input type="checkbox" id="card44" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1808,7 +1937,7 @@
     </div>  
 </div>
 <!-- Vileplume #045 -->
-<div class="card"> 
+<div class="card grasscard"> 
   <input type="checkbox" id="card45" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1848,7 +1977,7 @@
     </div>  
 </div>
 <!-- Paras #046 -->
-<div class="card"> 
+<div class="card bugcard"> 
   <input type="checkbox" id="card46" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1867,7 +1996,7 @@
               <div class="hp"></div>
         </div>
         <ul class="stats">
-              <li>Grass<br /><span class="info">Type</span></li>
+              <li>Bug<br /><span class="info">Type</span></li>
               <li>11.9 lbs<br /><span class="info">Weight</span></li>
               <li>1' 0"<br /><span class="info">Height</span></li>
         </ul>
@@ -1888,7 +2017,7 @@
     </div>  
 </div>
 <!-- Parasect #047 -->
-<div class="card"> 
+<div class="card bugcard"> 
   <input type="checkbox" id="card47" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1907,7 +2036,7 @@
               <div class="hp"></div>
         </div>
         <ul class="stats">
-              <li>Grass<br /><span class="info">Type</span></li>
+              <li>Bug<br /><span class="info">Type</span></li>
               <li>65 lbs<br /><span class="info">Weight</span></li>
               <li>3' 3"<br /><span class="info">Height</span></li>
         </ul>
@@ -1928,7 +2057,7 @@
     </div>  
 </div>
 <!-- Venonat #048 -->
-<div class="card"> 
+<div class="card bugcard"> 
   <input type="checkbox" id="card48" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1947,7 +2076,7 @@
               <div class="hp"></div>
         </div>
         <ul class="stats">
-              <li>Grass<br /><span class="info">Type</span></li>
+              <li>Bug<br /><span class="info">Type</span></li>
               <li>66.1 lbs<br /><span class="info">Weight</span></li>
               <li>3' 3"<br /><span class="info">Height</span></li>
         </ul>
@@ -1968,7 +2097,7 @@
     </div>  
 </div>
 <!-- Venomoth #049 -->
-<div class="card"> 
+<div class="card bugcard"> 
   <input type="checkbox" id="card49" class="more" aria-hidden="true">
     <div class="content">
       <div class="front">
@@ -1987,7 +2116,7 @@
               <div class="hp"></div>
         </div>
         <ul class="stats">
-              <li>Grass<br /><span class="info">Type</span></li>
+              <li>Bug<br /><span class="info">Type</span></li>
               <li>27.6 lbs<br /><span class="info">Weight</span></li>
               <li>4' 11"<br /><span class="info">Height</span></li>
         </ul>
@@ -2007,21 +2136,4093 @@
       </div>
     </div>  
 </div>
+<!-- Diglett #050 -->
+<div class="card groundcard"> 
+  <input type="checkbox" id="card50" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card ground">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/050.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Diglett #050</h3>
+        <p class="cardp">If a Diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops.</p>
+        <label for="card50" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Diglett</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Ground<br /><span class="info">Type</span></li>
+              <li>1.8 lbs<br /><span class="info">Weight</span></li>
+              <li>0' 8"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Route 25</h4>
+              <img src="https://www.serebii.net/pokearth/maps/kanto-lgpe/25.jpg" alt="Route 25">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Grass Ice</h2>
+            <label for="card50" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Dugtrio #051 -->
+<div class="card groundcard"> 
+  <input type="checkbox" id="card51" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card ground">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/051.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Dugtrio #051</h3>
+        <p class="cardp">A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.</p>
+        <label for="card51" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Dugtrio</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Ground<br /><span class="info">Type</span></li>
+              <li>73.4 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Diglett's Cave</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/1/17/HGSS_Diglett%27s_Cave-Night.png" alt="Diglett's Cave">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Grass Ice</h2>
+            <label for="card51" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Meowth #052 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card52" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Meowth #052</h3>
+        <p class="cardp">It loves to collect shiny things. If it’s in a good mood, it might even let its Trainer have a look at its hoard of treasures.</p>
+        <label for="card52" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Meowth</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>9.3 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fightning</h2>
+            <label for="card52" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Persian #053 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card53" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/053.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Persian #053</h3>
+        <p class="cardp">Getting this prideful Pokémon to warm up to you takes a lot of effort, and it will claw at you the moment it gets annoyed.</p>
+        <label for="card53" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Persian</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>70.5 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fightning</h2>
+            <label for="card53" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Psyduck #054 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card54" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Psyduck #054</h3>
+        <p class="cardp">Psyduck is constantly beset by headaches. If the Pokémon lets its strange power erupt, apparently the pain subsides for a while.</p>
+        <label for="card54" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Psyduck</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>43.2 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card54" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Golduck #055 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card55" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/055.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Golduck #055</h3>
+        <p class="cardp">This Pokémon lives in gently flowing rivers. It paddles through the water with its long limbs, putting its graceful swimming skills on display.</p>
+        <label for="card55" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Golduck</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>168.9 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card55" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Mankey #056 -->
+<div class="card fightingcard"> 
+  <input type="checkbox" id="card56" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fighting">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/056.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Mankey #056</h3>
+        <p class="cardp">An agile Pokémon that lives in trees. It angers easily and will not hesitate to attack anything.</p>
+        <label for="card56" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Mankey</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fightning<br /><span class="info">Type</span></li>
+              <li>61.7 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 8"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Flying Fairy</h2>
+            <label for="card56" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Primeape #057 -->
+<div class="card fightingcard"> 
+  <input type="checkbox" id="card57" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fighting">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/057.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Primeape #057</h3>
+        <p class="cardp">It stops being angry only when nobody else is around. To view this moment is very difficult.</p>
+        <label for="card57" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Primeape</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fightning<br /><span class="info">Type</span></li>
+              <li>70.5 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Flying Fairy</h2>
+            <label for="card57" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Growlithe #058 -->
+<div class="card firecard"> 
+  <input type="checkbox" id="card58" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/058.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Growlithe #058</h3>
+        <p class="cardp">It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.</p>
+        <label for="card58" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Growlithe</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>41.9 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Ground Rock</h2>
+            <label for="card58" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Arcanine #059 -->
+<div class="card firecard"> 
+  <input type="checkbox" id="card59" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Arcanine #059</h3>
+        <p class="cardp">The sight of it running over 6,200 miles in a single day and night has captivated many people.</p>
+        <label for="card59" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Arcanine</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>341.7 lbs<br /><span class="info">Weight</span></li>
+              <li>6' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Ground Rock</h2>
+            <label for="card59" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Poliwag #060 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card60" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/060.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Poliwag #060</h3>
+        <p class="cardp">For Poliwag, swimming is easier than walking. The swirl pattern on its belly is actually part of the Pokémon’s innards showing through the skin.</p>
+        <label for="card60" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Poliwag</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>27.3 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card60" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Poliwhirl #061 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card61" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/061.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Poliwhirl #061</h3>
+        <p class="cardp">Staring at the swirl on its belly causes drowsiness. This trait of Poliwhirl’s has been used in place of lullabies to get children to go to sleep.</p>
+        <label for="card61" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Poliwhirl</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>44.1 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card61" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Poliwrath #062 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card62" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/062.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Poliwrath #062</h3>
+        <p class="cardp">Its body is solid muscle. When swimming through cold seas, Poliwrath uses its impressive arms to smash through drift ice and plow forward.</p>
+        <label for="card62" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Poliwrath</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>119.0 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fairy Grass Flying Psychic Electric</h2>
+            <label for="card62" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Abra #063 -->
+<div class="card psychiccard"> 
+  <input type="checkbox" id="card63" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card psychic">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/063.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Abra #063</h3>
+        <p class="cardp">This Pokémon uses its psychic powers while it sleeps. The contents of Abra’s dreams affect the powers that the Pokémon wields.</p>
+        <label for="card63" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Abra</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Psychic<br /><span class="info">Type</span></li>
+              <li>43.0 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Bug</h2>
+            <label for="card63" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Kadabra #064 -->
+<div class="card psychiccard"> 
+  <input type="checkbox" id="card64" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card psychic">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/064.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Kadabra #064</h3>
+        <p class="cardp">Using its psychic power, Kadabra levitates as it sleeps. It uses its springy tail as a pillow.</p>
+        <label for="card64" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Kadabra</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Psychic<br /><span class="info">Type</span></li>
+              <li>124.6 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Bug</h2>
+            <label for="card64" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Alakazam #065 -->
+<div class="card psychiccard"> 
+  <input type="checkbox" id="card65" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card psychic">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Alakazam #065</h3>
+        <p class="cardp">It has an incredibly high level of intelligence. Some say that Alakazam remembers everything that ever happens to it, from birth till death.</p>
+        <label for="card65" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Alakazam</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Psychic<br /><span class="info">Type</span></li>
+              <li>105.8 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Bug</h2>
+            <label for="card65" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Machop #066 -->
+<div class="card fightingcard"> 
+  <input type="checkbox" id="card66" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fighting">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/066.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Machop #066</h3>
+        <p class="cardp">Its whole body is composed of muscles. Even though it’s the size of a human child, it can hurl 100 grown-ups.</p>
+        <label for="card66" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Machop</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fighting<br /><span class="info">Type</span></li>
+              <li>43.0 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Flying Fairy</h2>
+            <label for="card66" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Machoke #067 -->
+<div class="card fightingcard"> 
+  <input type="checkbox" id="card67" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fighting">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/067.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Machoke #067</h3>
+        <p class="cardp">Its muscular body is so powerful, it must wear a power-save belt to be able to regulate its motions.</p>
+        <label for="card67" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Machoke</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fighting<br /><span class="info">Type</span></li>
+              <li>155.4 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Flying Fairy</h2>
+            <label for="card67" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Machamp #068 -->
+<div class="card fightingcard"> 
+  <input type="checkbox" id="card68" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fighting">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/068.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Machamp #068</h3>
+        <p class="cardp">It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles.</p>
+        <label for="card68" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Machamp</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fighting<br /><span class="info">Type</span></li>
+              <li>286.6 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Flying Fairy</h2>
+            <label for="card68" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Bellsprout #069 -->
+<div class="card grasscard"> 
+  <input type="checkbox" id="card69" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card grass">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/069.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Bellsprout #069</h3>
+        <p class="cardp">Prefers hot and humid places. It ensnares tiny bugs with its vines and devours them.</p>
+        <label for="card69" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Bellsprout</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>8.8 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Ice </h2>
+            <label for="card69" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Weepinbell #070 -->
+<div class="card grasscard"> 
+  <input type="checkbox" id="card70" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card grass">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/070.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Weepinbell #070</h3>
+        <p class="cardp">When hungry, it swallows anything that moves. Its hapless prey is dissolved by strong acids.</p>
+        <label for="card70" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Weepinbell</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>14.1 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Ice </h2>
+            <label for="card70" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Victreebel #071 -->
+<div class="card grasscard"> 
+  <input type="checkbox" id="card71" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card grass">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/071.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Victreebel #071</h3>
+        <p class="cardp">Lures prey with the sweet aroma of honey. Swallowed whole, the prey is dissolved in a day, bones and all.</p>
+        <label for="card71" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Victreebel</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>34.2 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Psychic Flying Ice </h2>
+            <label for="card71" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Tentacool #072 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card72" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/072.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Tentacool #072</h3>
+        <p class="cardp">Tentacool is not a particularly strong swimmer. It drifts across the surface of shallow seas as it searches for prey.</p>
+        <label for="card72" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Tentacool</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>100.3lbs<br /><span class="info">Weight</span></li>
+              <li>2' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Electric Ground </h2>
+            <label for="card72" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Tentacruel #073 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card73" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/073.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Tentacruel #073</h3>
+        <p class="cardp">When the red orbs on Tentacruel’s head glow brightly, watch out. The Pokémon is about to fire off a burst of ultrasonic waves.</p>
+        <label for="card73" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Tentacruel</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>121.3lbs<br /><span class="info">Weight</span></li>
+              <li>5' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Electric Ground </h2>
+            <label for="card73" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Geodude #074 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card74" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/074.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Geodude #074</h3>
+        <p class="cardp">Commonly found near mountain trails and the like. If you step on one by accident, it gets angry.</p>
+        <label for="card74" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Geodude</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>44.1<br /><span class="info">Weight</span></li>
+              <li>1' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Fighting Water Ice Grass Ground </h2>
+            <label for="card74" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Graveler #075 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card75" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/075.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Graveler #075</h3>
+        <p class="cardp">Often seen rolling down mountain trails. Obstacles are just things to roll straight over, not avoid.</p>
+        <label for="card75" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Graveler</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>231.5<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Fighting Water Ice Grass Ground </h2>
+            <label for="card75" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Golem #076 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card76" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/076.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Golem #076</h3>
+        <p class="cardp">Once it sheds its skin, its body turns tender and whitish. Its hide hardens when it’s exposed to air.</p>
+        <label for="card76" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Golem</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>661.4<br /><span class="info">Weight</span></li>
+              <li>4' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Fighting Water Ice Grass Ground </h2>
+            <label for="card76" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Ponyta #077 -->
+<div class="card firecard"> 
+  <input type="checkbox" id="card77" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/077.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Ponyta #077</h3>
+        <p class="cardp">It can’t run properly when it’s newly born. As it races around with others of its kind, its legs grow stronger.</p>
+        <label for="card77" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Ponyta</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>61.1 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Ground Rock</h2>
+            <label for="card77" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Rapidash #078 -->
+<div class="card firecard"> 
+  <input type="checkbox" id="card78" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Rapidash #078</h3>
+        <p class="cardp">This Pokémon can be seen galloping through fields at speeds of up to 150 mph, its fiery mane fluttering in the wind.</p>
+        <label for="card78" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Rapidash</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>209.4 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Ground Rock</h2>
+            <label for="card78" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Slowpoke #079 -->
+<div class="card psychiccard"> 
+  <input type="checkbox" id="card79" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card psychic">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/079.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Slowpoke #079</h3>
+        <p class="cardp">Slow-witted and oblivious, this Pokémon won’t feel any pain if its tail gets eaten. It won’t notice when its tail grows back, either.</p>
+        <label for="card79" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Slowpoke</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Psychic<br /><span class="info">Type</span></li>
+              <li>79.4 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Grass Electric Bug</h2>
+            <label for="card79" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Slowbro #080 -->
+<div class="card psychiccard"> 
+  <input type="checkbox" id="card80" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card psychic">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/080.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Slowbro #080</h3>
+        <p class="cardp">Slowpoke became Slowbro when a Shellder bit on to its tail. Sweet flavors seeping from the tail make the Shellder feel as if its life is a dream.</p>
+        <label for="card80" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Slowbro</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Psychic<br /><span class="info">Type</span></li>
+              <li>173.1 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Grass Electric Bug</h2>
+            <label for="card80" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Magnemite #081 -->
+<div class="card electriccard"> 
+  <input type="checkbox" id="card81" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card electric">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/081.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Magnemite #081</h3>
+        <p class="cardp">At times, Magnemite runs out of electricity and ends up on the ground. If you give batteries to a grounded Magnemite, it’ll start moving again.</p>
+        <label for="card81" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Magnemite</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Electric<br /><span class="info">Type</span></li>
+              <li>13.2 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Fighting Ground</h2>
+            <label for="card81" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Magneton #082 -->
+<div class="card electriccard"> 
+  <input type="checkbox" id="card82" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card electric">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/082.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Magneton #082</h3>
+        <p class="cardp">This Pokémon is three Magnemite that have linked together. Magneton sends out powerful radio waves to study its surroundings.</p>
+        <label for="card82" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Magneton</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Electric<br /><span class="info">Type</span></li>
+              <li>132.3 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Fighting Ground</h2>
+            <label for="card82" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Farfetch’d #083 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card83" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/083.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Farfetch’d #083</h3>
+        <p class="cardp">The stalk this Pokémon carries in its wings serves as a sword to cut down opponents. In a dire situation, the stalk can also serve as food.</p>
+        <label for="card83" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Farfetch’d</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>33.1 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Electric Ice Rock</h2>
+            <label for="card83" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Doduo #084 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card84" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/084.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Doduo #084</h3>
+        <p class="cardp">Its short wings make flying difficult. Instead, this Pokémon runs at high speed on developed legs.</p>
+        <label for="card84" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Doduo</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>86.4 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Electric Ice Rock</h2>
+            <label for="card84" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Dodrio #085 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card85" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/085.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Dodrio #085</h3>
+        <p class="cardp">One of Doduo’s two heads splits to form a unique species. It runs close to 40 mph in prairies.</p>
+        <label for="card85" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Dodrio</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>187.8 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Electric Ice Rock</h2>
+            <label for="card85" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Seel #086 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card86" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/086.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Seel #086</h3>
+        <p class="cardp">Loves freezing-cold conditions. Relishes swimming in a frigid climate of around 14 degrees Fahrenheit.</p>
+        <label for="card86" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Seel</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>198.4 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card86" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Dewgong #087 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card87" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/087.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Dewgong #087</h3>
+        <p class="cardp">Its entire body is a snowy white. Unharmed by even intense cold, it swims powerfully in icy waters.</p>
+        <label for="card87" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Dewgong</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>264.6 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric Fightning Rock</h2>
+            <label for="card87" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Grimer #088 -->
+<div class="card poisoncard"> 
+  <input type="checkbox" id="card88" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/088.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Grimer #088</h3>
+        <p class="cardp">Made of congealed sludge. It smells too putrid to touch. Even weeds won’t grow in its path.</p>
+        <label for="card88" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Grimer</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>66.1 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground</h2>
+            <label for="card88" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Muk #089 -->
+<div class="card poisoncard"> 
+  <input type="checkbox" id="card89" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/089.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Muk #089</h3>
+        <p class="cardp">Smells so awful, it can cause fainting. Through degeneration of its nose, it lost its sense of smell.</p>
+        <label for="card89" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Muk</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>66.1 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground</h2>
+            <label for="card89" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Shellder #090 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card90" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/090.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Shellder #090</h3>
+        <p class="cardp">It swims facing backward by opening and closing its two-piece shell. It is surprisingly fast.</p>
+        <label for="card90" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Shellder</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>8.8 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground</h2>
+            <label for="card90" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Cloyster #091 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card91" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/091.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Cloyster #091</h3>
+        <p class="cardp">Its shell is extremely hard. It cannot be shattered, even with a bomb. The shell opens only when it is attacking.</p>
+        <label for="card91" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Cloyster</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>292.1 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric Fighting Rock</h2>
+            <label for="card91" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Gastly #092 -->
+<div class="card poisoncard"> 
+  <input type="checkbox" id="card92" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/092.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Gastly #092</h3>
+        <p class="cardp">Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.</p>
+        <label for="card92" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Gastly</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>0.2 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Psychic Ground</h2>
+            <label for="card92" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Haunter #093 -->
+<div class="card poisoncard"> 
+  <input type="checkbox" id="card93" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/093.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Haunter #093</h3>
+        <p class="cardp">Its tongue is made of gas. If licked, its victim starts shaking constantly until death eventually comes.</p>
+        <label for="card93" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Haunter</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>0.2 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Psychic Ground</h2>
+            <label for="card93" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Gengar #094 -->
+<div class="card poisoncard"> 
+  <input type="checkbox" id="card94" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Gengar #094</h3>
+        <p class="cardp">On the night of a full moon, if shadows move on their own and laugh, it must be Gengar’s doing.</p>
+        <label for="card94" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Gengar</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>89.3 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Psychic Ground</h2>
+            <label for="card94" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Onix #095 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card95" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/095.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Onix #095</h3>
+        <p class="cardp">As it digs through the ground, it absorbs many hard objects. This is what makes its body so solid.</p>
+        <label for="card95" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Onix</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>463 lbs<br /><span class="info">Weight</span></li>
+              <li>28' 10"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Fighting Water Ice Grass Ground</h2>
+            <label for="card95" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Drowzee #096 -->
+<div class="card psychiccard"> 
+  <input type="checkbox" id="card96" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card psychic">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/096.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Drowzee #096</h3>
+        <p class="cardp">If you sleep by it all the time, it will sometimes show you dreams it had eaten in the past.</p>
+        <label for="card96" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Drowzee</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Psychic<br /><span class="info">Type</span></li>
+              <li>71.4 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Bug</h2>
+            <label for="card96" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Hypno #097 -->
+<div class="card psychiccard"> 
+  <input type="checkbox" id="card97" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card psychic">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/097.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Hypno #097</h3>
+        <p class="cardp">Avoid eye contact if you come across one. It will try to put you to sleep by using its pendulum.</p>
+        <label for="card97" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Hypno</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Psychic<br /><span class="info">Type</span></li>
+              <li>166.7 lbs<br /><span class="info">Weight</span></li>
+              <li>5' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Bug</h2>
+            <label for="card97" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Krabby #098 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card98" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/098.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Krabby #098</h3>
+        <p class="cardp">It can be found near the sea. The large pincers grow back if they are torn out of their sockets.</p>
+        <label for="card98" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Krabby</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>14.3 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card98" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Kingler #099 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card99" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/099.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Kingler #099</h3>
+        <p class="cardp">Its large and hard pincer has 10,000-horsepower strength. However, being so big, it is unwieldy to move.</p>
+        <label for="card99" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Kingler</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>132.3 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card99" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Voltorb #100 -->
+<div class="card electriccard"> 
+  <input type="checkbox" id="card100" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card electric">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/100.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Voltorb #100</h3>
+        <p class="cardp">It is said to camouflage itself as a Poké Ball. It will self-destruct with very little stimulus.</p>
+        <label for="card100" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Voltorb</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Electric<br /><span class="info">Type</span></li>
+              <li>22.9 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 8"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ground</h2>
+            <label for="card100" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Electrode #101 -->
+<div class="card electriccard"> 
+  <input type="checkbox" id="card101" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card electric">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/101.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Electrode #101</h3>
+        <p class="cardp">Stores electrical energy inside its body. Even the slightest shock could trigger a huge explosion.</p>
+        <label for="card101" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Electrode</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Electric<br /><span class="info">Type</span></li>
+              <li>146.8 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ground</h2>
+            <label for="card101" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Exeggcute #102 -->
+<div class="card grasscard"> 
+  <input type="checkbox" id="card102" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card grass">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/102.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Exeggcute #102</h3>
+        <p class="cardp">Though it may look like it’s just a bunch of eggs, it’s a proper Pokémon. Exeggcute communicates with others of its kind via telepathy, apparently.</p>
+        <label for="card102" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Exeggcute</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>5.5 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Fire Flying Ice Dark Poison Bug</h2>
+            <label for="card102" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Exeggutor #103 -->
+<div class="card grasscard"> 
+  <input type="checkbox" id="card103" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card grass">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/103.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Exeggutor #103</h3>
+        <p class="cardp">Each of Exeggutor’s three heads is thinking different thoughts. The three don’t seem to be very interested in one another.</p>
+        <label for="card103" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Exeggutor</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>264.6 lbs<br /><span class="info">Weight</span></li>
+              <li>6' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Fire Flying Ice Dark Poison Bug</h2>
+            <label for="card103" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Cubone #104 -->
+<div class="card groundcard"> 
+  <input type="checkbox" id="card104" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card ground">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/104.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Cubone #104</h3>
+        <p class="cardp">When the memory of its departed mother brings it to tears, its cries echo mournfully within the skull it wears on its head.</p>
+        <label for="card104" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Cubone</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Ground<br /><span class="info">Type</span></li>
+              <li>14.3 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Grass Ice</h2>
+            <label for="card104" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Marowak #105 -->
+<div class="card groundcard"> 
+  <input type="checkbox" id="card105" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card ground">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/105.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Marowak #105</h3>
+        <p class="cardp">This Pokémon overcame its sorrow to evolve a sturdy new body. Marowak faces its opponents bravely, using a bone as a weapon.</p>
+        <label for="card105" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Marowak</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Ground<br /><span class="info">Type</span></li>
+              <li>99.2 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Grass Ice</h2>
+            <label for="card105" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Hitmonlee #106 -->
+<div class="card fightingcard"> 
+  <input type="checkbox" id="card106" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fighting">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/106.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Hitmonlee #106</h3>
+        <p class="cardp">This amazing Pokémon has an awesome sense of balance. It can kick in succession from any position.</p>
+        <label for="card106" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Hitmonlee</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fightning<br /><span class="info">Type</span></li>
+              <li>109.8 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Flying Fairy</h2>
+            <label for="card106" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Hitmonchan #107 -->
+<div class="card fightingcard"> 
+  <input type="checkbox" id="card107" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fighting">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/107.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Hitmonchan #107</h3>
+        <p class="cardp">Its punches slice the air. They are launched at such high speed, even a slight graze could cause a burn.</p>
+        <label for="card107" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Hitmonchan</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fightning<br /><span class="info">Type</span></li>
+              <li>110.7 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Flying Fairy</h2>
+            <label for="card107" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Lickitung #108 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card108" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/108.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Lickitung #108</h3>
+        <p class="cardp">If this Pokémon’s sticky saliva gets on you and you don’t clean it off, an intense itch will set in. The itch won’t go away, either.</p>
+        <label for="card108" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Lickitung</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>144.4 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fightning</h2>
+            <label for="card108" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Koffing #109 -->
+<div class="card poisoncard"> 
+  <input type="checkbox" id="card109" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/109.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Koffing #109</h3>
+        <p class="cardp">Its body is full of poisonous gas. It floats into garbage dumps, seeking out the fumes of raw, rotting trash.</p>
+        <label for="card109" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Koffing</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>2.2 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground</h2>
+            <label for="card109" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Weezing #110 -->
+<div class="card poisoncard"> 
+  <input type="checkbox" id="card110" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card poison">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/110.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Weezing #110</h3>
+        <p class="cardp">It mixes gases between its two bodies. It’s said that these Pokémon were seen all over the Galar region back in the day.</p>
+        <label for="card110" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Weezing</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Poison<br /><span class="info">Type</span></li>
+              <li>20.9 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Psychic Ground</h2>
+            <label for="card110" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Rhyhorn #111 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card111" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/111.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Rhyhorn #111</h3>
+        <p class="cardp">Strong, but not too bright, this Pokémon can shatter even a skyscraper with its charging tackles.</p>
+        <label for="card111" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Rhyhorn</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>253.5 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Ice Water Fighting Grass Ground</h2>
+            <label for="card111" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Rhydon #112 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card112" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/112.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Rhydon #112</h3>
+        <p class="cardp">It begins walking on its hind legs after evolution. It can punch holes through boulders with its horn.</p>
+        <label for="card112" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Rhydon</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>264.6 lbs<br /><span class="info">Weight</span></li>
+              <li>6' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Ice Water Fighting Grass Ground</h2>
+            <label for="card112" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Chansey #113 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card113" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/113.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Chansey #113</h3>
+        <p class="cardp">The egg Chansey carries is not only delicious but also packed with nutrition. It’s used as a high-class cooking ingredient.</p>
+        <label for="card113" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Chansey</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>76.3 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fighting</h2>
+            <label for="card113" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Tangela #114 -->
+<div class="card grasscard"> 
+  <input type="checkbox" id="card114" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card grass">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/114.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Tangela #114</h3>
+        <p class="cardp">Hidden beneath a tangle of vines that grows nonstop even if the vines are torn off, this Pokémon’s true appearance remains a mystery.</p>
+        <label for="card114" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Tangela</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Grass<br /><span class="info">Type</span></li>
+              <li>77.2 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Flying Ice Poison Bug</h2>
+            <label for="card114" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Kangaskhan #115 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card115" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/115.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Kangaskhan #115</h3>
+        <p class="cardp">Although it’s carrying its baby in a pouch on its belly, Kangaskhan is swift on its feet. It intimidates its opponents with quick jabs..</p>
+        <label for="card115" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Kangaskhan</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>176.4 lbs<br /><span class="info">Weight</span></li>
+              <li>7' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fighting</h2>
+            <label for="card115" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Horsea #116 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card116" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/116.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Horsea #116</h3>
+        <p class="cardp">Horsea makes its home in oceans with gentle currents. If this Pokémon is under attack, it spits out pitch-black ink and escapes.</p>
+        <label for="card116" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Horsea</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>17.6 lbs<br /><span class="info">Weight</span></li>
+              <li>1' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card116" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Seadra #117 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card117" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/117.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Seadra #117</h3>
+        <p class="cardp">It’s the males that raise the offspring. While Seadra are raising young, the spines on their backs secrete thicker and stronger poison.</p>
+        <label for="card117" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Seadra</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>55.1 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card117" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Goldeen #118 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card118" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/118.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Goldeen #118</h3>
+        <p class="cardp">Its dorsal, pectoral, and tail fins wave elegantly in water. That is why it is known as the Water Dancer.</p>
+        <label for="card118" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Goldeen</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>33.1 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card118" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Seaking #119 -->
+<div class="card watercard"> 
+    <input type="checkbox" id="card119" class="more" aria-hidden="true">
+      <div class="content">
+        <div class="front">
+          <div class="top-card water">
+          <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/119.png" alt="">
+          </div>
+          <div class="bottom-card">
+          <h3>Seaking #119</h3>
+          <p class="cardp">In autumn, its body becomes more fatty in preparing to propose to a mate. It takes on beautiful colors.</p>
+          <label for="card119" class="button" aria-hidden="true">More info &#8594;</label>
+          </div>
+        </div>
+        <div class="back">
+          <div class="name">
+                <h1>Seaking</h1>
+                <div class="hp"></div>
+          </div>
+          <ul class="stats">
+                <li>Water<br /><span class="info">Type</span></li>
+                <li>86.0 lbs<br /><span class="info">Weight</span></li>
+                <li>4' 3"<br /><span class="info">Height</span></li>
+          </ul>
+          <div class="facts">
+            <div class="split">
+              <div>
+                <h2>Common Location</h2>
+                <h4>Celadon City</h4>
+                <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+              </div>
+            </div>
+          </div>
+          <div class="weakness">
+              <h2>Weakness: Grass Electric</h2>
+              <label for="card119" class="button return" aria-hidden="true">Go Back &#8594;</label>
+          </div>
+        </div>
+      </div>  
+</div>
+<!-- Staryu #120 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card120" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/120.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Staryu #120</h3>
+        <p class="cardp">If you visit a beach at the end of summer, you’ll be able to see groups of Staryu lighting up in a steady rhythm.</p>
+        <label for="card120" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Staryu</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>76.1 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card120" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Starmie #121 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card121" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/121.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Starmie #121</h3>
+        <p class="cardp">This Pokémon has an organ known as its core. The organ glows in seven colors when Starmie is unleashing its potent psychic powers.</p>
+        <label for="card121" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Starmie</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>176.4 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card121" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Mr. Mime #122 -->
+<div class="card psychiccard"> 
+  <input type="checkbox" id="card122" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card psychic">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/122.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Mr. Mime #122</h3>
+        <p class="cardp">The broadness of its hands may be no coincidence—many scientists believe its palms became enlarged specifically for pantomiming.</p>
+        <label for="card122" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Mr. Mime</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Psychic<br /><span class="info">Type</span></li>
+              <li>120.2 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Steel Poison</h2>
+            <label for="card122" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Scyther #123 -->
+<div class="card bugcard"> 
+  <input type="checkbox" id="card123" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/123.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Scyther #123</h3>
+        <p class="cardp">As Scyther fights more and more battles, its scythes become sharper and sharper. With a single slice, Scyther can fell a massive tree.</p>
+        <label for="card123" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Scyther</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Bug<br /><span class="info">Type</span></li>
+              <li>123.5 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Flying Electric Ice Rock </h2>
+            <label for="card123" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Jynx #124 -->
+<div class="card icecard"> 
+  <input type="checkbox" id="card124" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card ice">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/124.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Jynx #124</h3>
+        <p class="cardp">In certain parts of Galar, Jynx was once feared and worshiped as the Queen of Ice.</p>
+        <label for="card124" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Jynx</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Ice<br /><span class="info">Type</span></li>
+              <li>89.5 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Ghost Fire Dark Rock Bug </h2>
+            <label for="card124" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Electabuzz #125 -->
+<div class="card electriccard"> 
+  <input type="checkbox" id="card125" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card electric">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/125.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Electabuzz #125</h3>
+        <p class="cardp">Many power plants keep Ground-type Pokémon around as a defense against Electabuzz that come seeking electricity.</p>
+        <label for="card125" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Electabuzz</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Electric<br /><span class="info">Type</span></li>
+              <li>66.1 lbs<br /><span class="info">Weight</span></li>
+              <li>3' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ground </h2>
+            <label for="card125" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Magmar #126 -->
+<div class="card firecard"> 
+  <input type="checkbox" id="card126" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/126.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Magmar #126</h3>
+        <p class="cardp">Magmar dispatches its prey with fire. But it regrets this habit once it realizes that it has burned its intended prey to a charred crisp.</p>
+        <label for="card126" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Magmar</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>98.1 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Ground Rock </h2>
+            <label for="card126" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Pinsir #127 -->
+<div class="card bugcard"> 
+  <input type="checkbox" id="card127" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card bug">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/127.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Pinsir #127</h3>
+        <p class="cardp">These Pokémon judge one another based on pincers. Thicker, more impressive pincers make for more popularity with the opposite gender.</p>
+        <label for="card127" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Pinsir</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Bug<br /><span class="info">Type</span></li>
+              <li>121.3 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fire Flying Rock </h2>
+            <label for="card127" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Tauros #128 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card128" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/128.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Tauros #128</h3>
+        <p class="cardp">When Tauros begins whipping itself with its tails, it’s a warning that the Pokémon is about to charge with astounding speed.</p>
+        <label for="card128" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Tauros</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>194.9 lbs<br /><span class="info">Weight</span></li>
+              <li>4' 7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fighting</h2>
+            <label for="card128" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Magikarp #129 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card129" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Magikarp #129</h3>
+        <p class="cardp">It is virtually worthless in terms of both power and speed. It is the most weak and pathetic Pokémon in the world.</p>
+        <label for="card129" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Magikarp</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>22.0 lbs<br /><span class="info">Weight</span></li>
+              <li>2' 11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card129" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Gyarados #130 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card130" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Gyarados #130</h3>
+        <p class="cardp">It has an extremely aggressive nature. The Hyper Beam it shoots from its mouth totally incinerates all targets.</p>
+        <label for="card130" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Gyarados</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>518.1 lbs<br /><span class="info">Weight</span></li>
+              <li>21' 4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Electric Rock</h2>
+            <label for="card130" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Lapras #131 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card131" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/131.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Lapras #131</h3>
+        <p class="cardp">A smart and kindhearted Pokémon, it glides across the surface of the sea while its beautiful song echoes around it.</p>
+        <label for="card131" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Lapras</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>485 lbs<br /><span class="info">Weight</span></li>
+              <li>8' 2"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric Fighting Rock</h2>
+            <label for="card131" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Ditto #132 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card132" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Ditto #132</h3>
+        <p class="cardp">It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes.</p>
+        <label for="card132" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Ditto</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>8.8 lbs<br /><span class="info">Weight</span></li>
+              <li>1'2"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fightning</h2>
+            <label for="card132" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Eevee #133 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card133" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Eevee #133</h3>
+        <p class="cardp">It has the ability to alter the composition of its body to suit its surrounding environment.</p>
+        <label for="card133" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Eevee</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>14.3 lbs<br /><span class="info">Weight</span></li>
+              <li>1'0"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fightning</h2>
+            <label for="card133" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Vaporeon #134 -->
+<div class="card watercard"> 
+  <input type="checkbox" id="card134" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card water">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Vaporeon #134</h3>
+        <p class="cardp">When Vaporeon’s fins begin to vibrate, it is a sign that rain will come within a few hours.</p>
+        <label for="card134" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Vaporeon</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Water<br /><span class="info">Type</span></li>
+              <li>63.9 lbs<br /><span class="info">Weight</span></li>
+              <li>3'3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric</h2>
+            <label for="card134" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Jolteon #135 -->
+<div class="card electriccard"> 
+  <input type="checkbox" id="card135" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card electric">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Jolteon #135</h3>
+        <p class="cardp">If it is angered or startled, the fur all over its body bristles like sharp needles that pierce foes.</p>
+        <label for="card135" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Jolteon</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Electric<br /><span class="info">Type</span></li>
+              <li>54 lbs<br /><span class="info">Weight</span></li>
+              <li>2'7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ground</h2>
+            <label for="card135" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Flareon #136 -->
+<div class="card firecard"> 
+  <input type="checkbox" id="card136" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Flareon #136</h3>
+        <p class="cardp">Once it has stored up enough heat, this Pokémon’s body temperature can reach up to 1,700 degrees Fahrenheit.</p>
+        <label for="card136" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Flareon</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>55.1 lbs<br /><span class="info">Weight</span></li>
+              <li>2'11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Ground Rock</h2>
+            <label for="card136" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Porygon #137 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card137" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/137.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Porygon #137</h3>
+        <p class="cardp">State-of-the-art technology was used to create Porygon. It was the first artificial Pokémon to be created via computer programming.</p>
+        <label for="card137" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Porygon</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>80.5 lbs<br /><span class="info">Weight</span></li>
+              <li>2'7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Ground Rock</h2>
+            <label for="card137" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Omanyte #138 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card138" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/138.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Omanyte #138</h3>
+        <p class="cardp">Because some Omanyte manage to escape after being restored or are released into the wild by people, this species is becoming a problem.</p>
+        <label for="card138" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Omanyte</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>16.5 lbs<br /><span class="info">Weight</span></li>
+              <li>1'4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric Fighting Ground</h2>
+            <label for="card138" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Omastar #139 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card139" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/139.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Omastar #139</h3>
+        <p class="cardp">Weighed down by a large and heavy shell, Omastar couldn’t move very fast. Some say it went extinct because it was unable to catch food.</p>
+        <label for="card139" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Omastar</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>77.2 lbs<br /><span class="info">Weight</span></li>
+              <li>3'3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric Fighting Ground</h2>
+            <label for="card139" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Kabuto #140 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card140" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/140.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Kabuto #140</h3>
+        <p class="cardp">This species is almost entirely extinct. Kabuto molt every three days, making their shells harder and harder.</p>
+        <label for="card140" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Kabuto</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>25.4 lbs<br /><span class="info">Weight</span></li>
+              <li>1'8"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric Fighting </h2>
+            <label for="card140" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Kabutops #141 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card141" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/141.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Kabutops #141</h3>
+        <p class="cardp">Kabutops slices its prey apart and sucks out the fluids. The discarded body parts become food for other Pokémon.</p>
+        <label for="card141" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Kabutops</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>89.4 lbs<br /><span class="info">Weight</span></li>
+              <li>4'3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Grass Electric Fighting Ground </h2>
+            <label for="card141" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Aerodactyl #142 -->
+<div class="card rockcard"> 
+  <input type="checkbox" id="card142" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card rock">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/142.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Aerodactyl #142</h3>
+        <p class="cardp">This is a ferocious Pokémon from ancient times. Apparently even modern technology is incapable of producing a perfectly restored specimen.</p>
+        <label for="card142" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Aerodactyl</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Rock<br /><span class="info">Type</span></li>
+              <li>130.1 lbs<br /><span class="info">Weight</span></li>
+              <li>5'11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Water Electric Ice Rock </h2>
+            <label for="card142" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Snorlax #143 -->
+<div class="card normalcard"> 
+  <input type="checkbox" id="card143" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card normal">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Snorlax #143</h3>
+        <p class="cardp">It is not satisfied unless it eats over 880 pounds of food every day. When it is done eating, it goes promptly to sleep.</p>
+        <label for="card143" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Snorlax</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Normal<br /><span class="info">Type</span></li>
+              <li>1014.1 lbs<br /><span class="info">Weight</span></li>
+              <li>6'11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fighting </h2>
+            <label for="card143" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Articuno #144 -->
+<div class="card icecard"> 
+  <input type="checkbox" id="card144" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card ice">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/144.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Articuno #144</h3>
+        <p class="cardp">It’s said that this Pokémon’s beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it.</p>
+        <label for="card144" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Articuno</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Ice<br /><span class="info">Type</span></li>
+              <li>122.1 lbs<br /><span class="info">Weight</span></li>
+              <li>5'7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Steel Fire Electric Rock </h2>
+            <label for="card144" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Zapdos #145 -->
+<div class="card electriccard"> 
+  <input type="checkbox" id="card145" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card electric">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Zapdos #145</h3>
+        <p class="cardp">This Pokémon has complete control over electricity. There are tales of Zapdos nesting in the dark depths of pitch-black thunderclouds.</p>
+        <label for="card145" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Zapdos</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Electric<br /><span class="info">Type</span></li>
+              <li>116 lbs<br /><span class="info">Weight</span></li>
+              <li>5'3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ice Rock </h2>
+            <label for="card145" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Moltres #146 -->
+<div class="card firecard"> 
+  <input type="checkbox" id="card146" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card fire">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/146.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Moltres #146</h3>
+        <p class="cardp">It’s one of the legendary bird Pokémon. When Moltres flaps its flaming wings, they glimmer with a dazzling red glow.</p>
+        <label for="card146" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Moltres</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Fire<br /><span class="info">Type</span></li>
+              <li>132.3 lbs<br /><span class="info">Weight</span></li>
+              <li>6'7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Water Electric Rock </h2>
+            <label for="card146" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Dratini #147 -->
+<div class="card dragoncard"> 
+  <input type="checkbox" id="card147" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card dragon">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/147.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Dratini #147</h3>
+        <p class="cardp">Dratini dwells near bodies of rapidly flowing water, such as the plunge pools of waterfalls. As it grows, Dratini will shed its skin many times.</p>
+        <label for="card147" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Dratini</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Dragon<br /><span class="info">Type</span></li>
+              <li>7.3 lbs<br /><span class="info">Weight</span></li>
+              <li>5'11"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fairy Ice Dragon </h2>
+            <label for="card147" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Dragonair #148 -->
+<div class="card dragoncard"> 
+  <input type="checkbox" id="card148" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card dragon">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/148.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Dragonair #148</h3>
+        <p class="cardp">This Pokémon lives in pristine oceans and lakes. It can control the weather, and it uses this power to fly into the sky, riding on the wind.</p>
+        <label for="card148" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Dragonair</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Dragon<br /><span class="info">Type</span></li>
+              <li>36.4 lbs<br /><span class="info">Weight</span></li>
+              <li>13'1"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fairy Ice Dragon </h2>
+            <label for="card148" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Dragonite #149 -->
+<div class="card dragoncard"> 
+  <input type="checkbox" id="card149" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card dragon">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Dragonite #149</h3>
+        <p class="cardp">It’s a kindhearted Pokémon. If it spots a drowning person or Pokémon, Dragonite simply must help them.</p>
+        <label for="card149" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Dragonite</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Dragon<br /><span class="info">Type</span></li>
+              <li>463 lbs<br /><span class="info">Weight</span></li>
+              <li>7'3"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Fairy Ice Dragon Rock</h2>
+            <label for="card149" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Mewtwo #150 -->
+<div class="card psychiccard"> 
+  <input type="checkbox" id="card150" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card psychic">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Mewtwo #150</h3>
+        <p class="cardp">Its DNA is almost the same as Mew’s. However, its size and disposition are vastly different.</p>
+        <label for="card150" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Mewtwo</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Psychic<br /><span class="info">Type</span></li>
+              <li>269 lbs<br /><span class="info">Weight</span></li>
+              <li>6'7"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Bug</h2>
+            <label for="card150" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
+<!-- Mew #151 -->
+<div class="card psychiccard"> 
+  <input type="checkbox" id="card151" class="more" aria-hidden="true">
+    <div class="content">
+      <div class="front">
+        <div class="top-card psychic">
+        <img class="cardimg"src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png" alt="">
+        </div>
+        <div class="bottom-card">
+        <h3>Mew #151</h3>
+        <p class="cardp">When viewed through a microscope, this Pokémon’s short, fine, delicate hair can be seen.</p>
+        <label for="card151" class="button" aria-hidden="true">More info &#8594;</label>
+        </div>
+      </div>
+      <div class="back">
+        <div class="name">
+              <h1>Mew</h1>
+              <div class="hp"></div>
+        </div>
+        <ul class="stats">
+              <li>Psychic<br /><span class="info">Type</span></li>
+              <li>8.8 lbs<br /><span class="info">Weight</span></li>
+              <li>1'4"<br /><span class="info">Height</span></li>
+        </ul>
+        <div class="facts">
+          <div class="split">
+            <div>
+              <h2>Common Location</h2>
+              <h4>Celadon City</h4>
+              <img src="https://cdn2.bulbagarden.net/upload/b/bb/Celadon_City_HGSS.png" alt="Celadon City">
+            </div>
+          </div>
+        </div>
+        <div class="weakness">
+            <h2>Weakness: Ghost Dark Bug</h2>
+            <label for="card151" class="button return" aria-hidden="true">Go Back &#8594;</label>
+        </div>
+      </div>
+    </div>  
+</div>
 
 
 
-
-
- 
-
-
-
-   
-  </main>
+</main>
 </body>
 <script src="https://kit.fontawesome.com/bd274f38ed.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script src="script_theme.js"></script>
 </html>
-
-
 

@@ -44,6 +44,10 @@ body {
   margin-top: 8%;
 }
 
+.sidebar {
+  padding-top: 10%;
+  width: 100%;
+}
 .pokedex {
   display: block;
   width: 80%;
@@ -123,7 +127,8 @@ button {
   height: 75%;
   width: 80%;
   margin-right: 2%;
-  margin-top: 8%;
+  margin-top: 9%;
+  margin-bottom: 2.5%;
   float: right;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -132,6 +137,11 @@ button {
   color: rgb(138, 130, 130);
   position: absoulute;
   z-index: 0;
+}
+
+.toggle-by-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .grass {
@@ -176,61 +186,11 @@ button {
 .dragon {
   background: rgb(76, 141, 173);
 }
-.type-grass {
-  background: lightgreen;
-}
-.type-fire {
-  background: #ff0000;
-}
-.type-water {
-  background: #556cdd;
-}
-.type-bug {
-  background: #204903;
-}
-.type-normal {
-  background: #4b4b4b;
-}
-.type-poison {
-  background: rgb(183, 112, 218);
-}
-.type-electric {
-  background: rgb(212, 205, 74);
-}
-.type-ground {
-  background: rgb(67, 64, 9);
-}
-.type-fairy {
-  background: rgb(233, 137, 222);
-}
-.type-fighting {
-  background: #e28737;
-}
-.type-psychic {
-  background: rgb(132, 42, 184);
-}
-.type-rock {
-  background: rgb(174, 129, 14);
-}
-.type-ice {
-  background: rgb(16, 215, 185);
-}
-.type-dragon {
-  background: rgb(41, 112, 202);
-}
-.type-icon {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  transform: translate(150px, 118px);
-  padding-left: 3px;
-  padding-top: 1px;
-}
 
 .card {
   width: 200px;
   height: 300px;
+  border-radius: 20px;
 }
 
 .more {
@@ -330,7 +290,7 @@ h3 {
 }
 
 .card:hover {
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
 }
 
@@ -451,4 +411,464 @@ h4 {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #355cc9;
+}
+
+.filter-title {
+  text-align: center;
+  padding-top: 2rem;
+  color: #8dbabc;
+}
+.switch-box {
+  display: flex;
+  margin-top: 10%;
+}
+
+.can-toggle *,
+.can-toggle *:before,
+.can-toggle *:after {
+  box-sizing: border-box;
+}
+.can-toggle input[type='checkbox'] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.can-toggle input[type='checkbox']:checked ~ label .can-toggle__switch:before {
+  content: attr(data-unchecked);
+  left: 0;
+}
+.can-toggle input[type='checkbox']:checked ~ label .can-toggle__switch:after {
+  content: attr(data-checked);
+}
+.can-toggle label {
+  user-select: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.can-toggle label .can-toggle__switch:before {
+  content: attr(data-checked);
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.can-toggle label .can-toggle__switch:after {
+  content: attr(data-unchecked);
+  position: absolute;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  background: white;
+  transform: translate3d(0, 0, 0);
+}
+.can-toggle input[type='checkbox']:checked:focus ~ label .can-toggle__switch,
+.can-toggle input[type='checkbox']:checked:hover ~ label .can-toggle__switch {
+  background-color: #5fc054;
+}
+.can-toggle
+  input[type='checkbox']:checked:focus
+  ~ label
+  .can-toggle__switch:after,
+.can-toggle
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch:after {
+  color: #47a43d;
+}
+.can-toggle label .can-toggle__switch {
+  transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+  background: #848484;
+}
+.can-toggle label .can-toggle__switch:before {
+  color: rgba(255, 255, 255, 0.5);
+}
+.can-toggle label .can-toggle__switch:after {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  color: #777;
+}
+.can-toggle input[type='checkbox']:checked ~ label .can-toggle__switch:after {
+  transform: translate3d(65px, 0, 0);
+}
+.can-toggle label .can-toggle__switch {
+  height: 36px;
+  flex: 0 0 134px;
+  border-radius: 4px;
+}
+.can-toggle label .can-toggle__switch:before {
+  left: 67px;
+  font-size: 12px;
+  line-height: 36px;
+  width: 67px;
+  padding: 0 12px;
+}
+.can-toggle label .can-toggle__switch:after {
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  width: 65px;
+  line-height: 32px;
+  font-size: 12px;
+}
+.can-toggle label .can-toggle__switch:hover:after {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.can-toggle.switch input[type='checkbox'][disabled] ~ label {
+  color: rgba(68, 68, 68, 0.5);
+}
+.can-toggle.switch input[type='checkbox']:focus ~ label .can-toggle__switch,
+.can-toggle.switch input[type='checkbox']:hover ~ label .can-toggle__switch {
+  background-color: #444;
+}
+.can-toggle.switch
+  input[type='checkbox']:focus
+  ~ label
+  .can-toggle__switch:after,
+.can-toggle.switch
+  input[type='checkbox']:hover
+  ~ label
+  .can-toggle__switch:after {
+  color: #2b2b2b;
+}
+.can-toggle.switch input[type='checkbox']:hover ~ label {
+  color: #373737;
+}
+
+.can-toggle.switch label .can-toggle__label-text {
+  flex: 1;
+}
+.can-toggle.switch label .can-toggle__switch {
+  transition: background-color 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  background: #515151;
+}
+.can-toggle.switch label .can-toggle__switch:before {
+  color: rgba(255, 255, 255, 0.7);
+}
+.can-toggle.switch label .can-toggle__switch:after {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  color: #444;
+}
+.can-toggle.switch
+  input[type='checkbox']:focus
+  ~ label
+  .can-toggle__switch:after,
+.can-toggle.switch
+  input[type='checkbox']:hover
+  ~ label
+  .can-toggle__switch:after {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.can-toggle.switch
+  input[type='checkbox']:checked:focus
+  ~ label
+  .can-toggle__switch:after,
+.can-toggle.switch
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch:after {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.switch label {
+  font-size: 13px;
+}
+.can-toggle.switch label .can-toggle__switch {
+  height: 60px;
+  border-radius: 60px;
+}
+.can-toggle.switch label .can-toggle__switch:before {
+  font-size: 10px;
+  line-height: 60px;
+}
+.can-toggle.switch label .can-toggle__switch:after {
+  top: 2px;
+
+  border-radius: 30px;
+  width: 58px;
+  line-height: 56px;
+  font-size: 10px;
+}
+.can-toggle.switch label .can-toggle__switch:hover:after {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.can-toggle.grass-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/7/79/Dream_Pok%C3%A9_Ball_Sprite.png');
+  background-size: cover;
+}
+
+.can-toggle.grass-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.grass-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: #69be28;
+}
+
+.can-toggle.fire-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/b/bf/Dream_Great_Ball_Sprite.png');
+  background-size: cover;
+}
+
+.can-toggle.fire-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.fire-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(242, 75, 63);
+}
+
+.can-toggle.water-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/9/95/Dream_Master_Ball_Sprite.png');
+  background-size: cover;
+}
+
+.can-toggle.water-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.water-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(35, 67, 172);
+}
+
+.can-toggle.bug-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/a/a8/Dream_Ultra_Ball_Sprite.png');
+  background-size: cover;
+}
+
+.can-toggle.bug-type input[type='checkbox']:checked ~ label .can-toggle__switch,
+.can-toggle.bug-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(12, 84, 5);
+}
+
+.can-toggle.normal-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/a/a8/Dream_Ultra_Ball_Sprite.png');
+  background-size: cover;
+}
+.can-toggle.normal-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.normal-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(137, 138, 137);
+}
+
+.can-toggle.poison-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/1/15/Dream_Safari_Ball_Sprite.png');
+  background-size: cover;
+}
+.can-toggle.poison-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.poison-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(198, 151, 221);
+}
+
+.can-toggle.electric-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/a/a0/Dream_Net_Ball_Sprite.png');
+  background-size: cover;
+}
+.can-toggle.electric-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.electric-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(228, 218, 80);
+}
+
+.can-toggle.ground-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/8/8c/Dream_Nest_Ball_Sprite.png');
+  background-size: cover;
+}
+.can-toggle.ground-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.ground-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(91, 85, 14);
+}
+
+.can-toggle.fighting-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/d/df/Dream_Repeat_Ball_Sprite.png');
+  background-size: cover;
+}
+.can-toggle.fighting-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.fighting-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(220, 116, 46);
+}
+
+.can-toggle.fairy-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/f/f0/Dream_Timer_Ball_Sprite.png');
+  background-size: cover;
+}
+.can-toggle.fairy-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.fairy-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: pink;
+}
+
+.can-toggle.psychic-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/9/9a/Dream_Dive_Ball_Sprite.png');
+  background-size: cover;
+}
+.can-toggle.psychic-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.psychic-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(92, 29, 143);
+}
+
+.can-toggle.rock-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/7/7e/Dream_Luxury_Ball_Sprite.png');
+  background-size: cover;
+}
+.can-toggle.rock-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.rock-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(211, 177, 41);
+}
+
+.can-toggle.ice-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/5/59/Dream_Dusk_Ball_Sprite.png');
+  background-size: cover;
+}
+.can-toggle.ice-type input[type='checkbox']:checked ~ label .can-toggle__switch,
+.can-toggle.ice-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(40, 211, 208);
+}
+
+.can-toggle.dragon-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch:after {
+  transform: translate3d(72px, 0, 0);
+  background-image: url('https://cdn2.bulbagarden.net/upload/0/0e/Dream_Heal_Ball_Sprite.png');
+  background-size: cover;
+}
+.can-toggle.dragon-type
+  input[type='checkbox']:checked
+  ~ label
+  .can-toggle__switch,
+.can-toggle.dragon-type
+  input[type='checkbox']:checked:hover
+  ~ label
+  .can-toggle__switch {
+  background-color: rgb(76, 141, 173);
+}
+
+.none {
+  display: none;
+}
+
+#dark {
+  background-color: rgb(100, 94, 94);
+  color: yellow;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-left: 1.5rem;
+  margin-top: 2rem;
 }

@@ -17,7 +17,7 @@ const rock = document.getElementsByClassName('rockcard');
 const ice = document.getElementsByClassName('icecard');
 const dragon = document.getElementsByClassName('dragoncard');
 
-const checkbox = document.getElementsByClassName('checkedoff');
+const checkbox = document.querySelectorAll('.checkedoff');
 
 const e1 = document.getElementById('e1');
 const e2 = document.getElementById('e2');
@@ -34,23 +34,294 @@ const e12 = document.getElementById('e12');
 const e13 = document.getElementById('e13');
 const e14 = document.getElementById('e14');
 
-let checkedList = [e14, e13];
+function allPokemon() {
+  for (var i = 0; i < allCards.length; i++) {
+    allCards[i].classList.remove('none');
+  }
+}
+function grassFuncAdd() {
+  for (var i = 0; i < grass.length; i++) {
+    grass[i].classList.add('none');
+  }
+}
+function fireFuncAdd() {
+  for (var i = 0; i < fire.length; i++) {
+    fire[i].classList.add('none');
+  }
+}
+function waterFuncAdd() {
+  for (var i = 0; i < water.length; i++) {
+    water[i].classList.add('none');
+  }
+}
+function bugFuncAdd() {
+  for (var i = 0; i < bug.length; i++) {
+    bug[i].classList.add('none');
+  }
+}
+function normalFuncAdd() {
+  for (var i = 0; i < normal.length; i++) {
+    normal[i].classList.add('none');
+  }
+}
+function poisonFuncAdd() {
+  for (var i = 0; i < poison.length; i++) {
+    poison[i].classList.add('none');
+  }
+}
+function electricFuncAdd() {
+  for (var i = 0; i < electric.length; i++) {
+    electric[i].classList.add('none');
+  }
+}
+function groundFuncAdd() {
+  for (var i = 0; i < ground.length; i++) {
+    ground[i].classList.add('none');
+  }
+}
+function fightingFuncAdd() {
+  for (var i = 0; i < fighting.length; i++) {
+    fighting[i].classList.add('none');
+  }
+}
+function fairyFuncAdd() {
+  for (var i = 0; i < fairy.length; i++) {
+    fairy[i].classList.add('none');
+  }
+}
+function psychicFuncAdd() {
+  for (var i = 0; i < psychic.length; i++) {
+    psychic[i].classList.add('none');
+  }
+}
+function rockFuncAdd() {
+  for (var i = 0; i < rock.length; i++) {
+    rock[i].classList.add('none');
+  }
+}
+function iceFuncAdd() {
+  for (var i = 0; i < ice.length; i++) {
+    ice[i].classList.add('none');
+  }
+}
+function dragonFuncAdd() {
+  for (var i = 0; i < dragon.length; i++) {
+    dragon[i].classList.add('none');
+  }
+}
 
-const grassSwitch = document.querySelector('#grass');
-const fireSwitch = document.querySelector('#fire');
-const waterSwitch = document.querySelector('#water');
-const bugSwitch = document.querySelector('#bug');
-const normalSwitch = document.querySelector('#normal');
-const poisonSwitch = document.querySelector('#poison');
-const electricSwitch = document.querySelector('#electric');
-const groundSwitch = document.querySelector('#ground');
-const fightingSwitch = document.querySelector('#fighting');
-const fairySwitch = document.querySelector('#fairy');
-const psychicSwitch = document.querySelector('#psychic');
-const rockSwitch = document.querySelector('#rock');
-const iceSwitch = document.querySelector('#ice');
-const dragonSwitch = document.querySelector('#dragon');
+function grassClick() {
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function fireClick() {
+  grassFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function waterClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function bugClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function normalClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function poisonClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function electricClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function groundClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function fightingClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function fairyClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function psychicClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function rockClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  iceFuncAdd();
+  dragonFuncAdd();
+}
+function iceClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  dragonFuncAdd();
+}
+function dragonClick() {
+  grassFuncAdd();
+  fireFuncAdd();
+  waterFuncAdd();
+  bugFuncAdd();
+  normalFuncAdd();
+  poisonFuncAdd();
+  electricFuncAdd();
+  groundFuncAdd();
+  fightingFuncAdd();
+  fairyFuncAdd();
+  psychicFuncAdd();
+  rockFuncAdd();
+  iceFuncAdd();
+}
 
+// SEARCH FUNCTION
 function searchPokemon() {
   const searchBar = document.getElementById('searchbar').value.toUpperCase();
   const cardContainer = document.getElementById('card-container');
@@ -66,209 +337,58 @@ function searchPokemon() {
   }
 }
 
-function allPokemon() {
-  for (var i = 0; i < allCards.length; i++) {
-    allCards[i].classList.add('none');
-  }
-}
-
-function allPokemon1() {
-  for (var i = 0; i < allCards.length; i++) {
-    allCards[i].classList.toggle('none');
-  }
-}
-
-function grassFunc() {
-  for (var i = 0; i < grass.length; i++) {
-    grass[i].classList.toggle('none');
-  }
-}
-
-function fireFunc() {
-  for (var i = 0; i < fire.length; i++) {
-    fire[i].classList.toggle('none');
-  }
-}
-
-function waterFunc() {
-  for (var i = 0; i < water.length; i++) {
-    water[i].classList.toggle('none');
-  }
-}
-function bugFunc() {
-  for (var i = 0; i < bug.length; i++) {
-    bug[i].classList.toggle('none');
-  }
-}
-function normalFunc() {
-  for (var i = 0; i < normal.length; i++) {
-    normal[i].classList.toggle('none');
-  }
-}
-function poisonFunc() {
-  for (var i = 0; i < poison.length; i++) {
-    poison[i].classList.toggle('none');
-  }
-}
-function electricFunc() {
-  for (var i = 0; i < electric.length; i++) {
-    electric[i].classList.toggle('none');
-  }
-}
-function groundFunc() {
-  for (var i = 0; i < ground.length; i++) {
-    ground[i].classList.toggle('none');
-  }
-}
-function fightingFunc() {
-  for (var i = 0; i < fighting.length; i++) {
-    fighting[i].classList.toggle('none');
-  }
-}
-function fairyFunc() {
-  for (var i = 0; i < fairy.length; i++) {
-    fairy[i].classList.toggle('none');
-  }
-}
-function psychicFunc() {
-  for (var i = 0; i < psychic.length; i++) {
-    psychic[i].classList.toggle('none');
-  }
-}
-function rockFunc() {
-  for (var i = 0; i < rock.length; i++) {
-    rock[i].classList.toggle('none');
-  }
-}
-function iceFunc() {
-  for (var i = 0; i < ice.length; i++) {
-    ice[i].classList.toggle('none');
-  }
-}
-function dragonFunc() {
-  for (var i = 0; i < dragon.length; i++) {
-    dragon[i].classList.toggle('none');
-  }
-}
-
-// if (grassSwitch.checked) {
-//   console.log('hello');
-// }
-
-// grassSwitch.addEventListener('click', function () {
-//   grassFunc();
-// });
-// fireSwitch.addEventListener('click', function () {
-//   fireFunc();
-// });
-// waterSwitch.addEventListener('click', function () {
-//   waterFunc();
-// });
-// bugSwitch.addEventListener('click', function () {
-//   bugFunc();
-// });
-// normalSwitch.addEventListener('click', function () {
-//   normalFunc();
-// });
-// poisonSwitch.addEventListener('click', function () {
-//   poisonFunc();
-// });
-// electricSwitch.addEventListener('click', function () {
-//   electricFunc();
-// });
-// groundSwitch.addEventListener('click', function () {
-//   groundFunc();
-// });
-// fightingSwitch.addEventListener('click', function () {
-//   fightingFunc();
-// });
-// fairySwitch.addEventListener('click', function () {
-//   fairyFunc();
-// });
-// psychicSwitch.addEventListener('click', function () {
-//   psychicFunc();
-// });
-// rockSwitch.addEventListener('click', function () {
-//   rockFunc();
-// });
-// iceSwitch.addEventListener('click', function () {
-//   iceFunc();
-// });
-// dragonSwitch.addEventListener('click', function () {
-//   dragonFunc();
-// });
-
-// grassSwitch.addEventListener('click', function () {
-//   if (e1.checked == false) {
-//     console.log('grass clicked');
-//   }
-// });
-// grassSwitch.addEventListener('click', function () {
-//   if (e1.checked == false) {
-//     console.log('grass clicked');
-//   }
-// });
-// grassSwitch.addEventListener('click', function () {
-//   if (e1.checked == false) {
-//     console.log('grass clicked');
-//   }
-// });
-// grassSwitch.addEventListener('click', function () {
-//   if (e1.checked == false) {
-//     console.log('grass clicked');
-//   }
-// });
-
-// checkbox.addEventListener('click', function () {
-//   for (var i = 0; i < checkbox.length; i++) {
-//     if (checkbox[i].checked) {
-//       allPokemon1();
-//     } else {
-//       allPokemon();
-//     }
-//   }
-// });
-// checkbox.addEventListener('click', function () {
-//   console.log('hello');
-// });
-
-document.querySelectorAll('.checkedoff').forEach(item => {
-  item.addEventListener('click', function () {
-    //     for (var i = 0; i < checkbox.length; i++) {
-    //       console.log(checkbox[0].checked);
-    //     }
-    //   });
-    // });
-
-    for (var i = 0; i < checkbox.length; i++) {
-      //   console.log('clciedk');
-      // } else {
-      if (checkbox[0].checked == true) {
-        grassFunc();
-      } else {
-        grassFunc();
+// FUNCTION TO ENABLE ONLY 1 CHECKBOX AT A TIME
+function selectOnlyThis(id) {
+  for (var i = 1; i <= 14; i++) {
+    if ('e' + i === id && document.getElementById('e' + i).checked === true) {
+      if ('e' + i == 'e1') {
+        allPokemon();
+        grassClick();
+      } else if ('e' + i == 'e2') {
+        allPokemon();
+        fireClick();
+      } else if ('e' + i == 'e3') {
+        allPokemon();
+        waterClick();
+      } else if ('e' + i == 'e4') {
+        allPokemon();
+        bugClick();
+      } else if ('e' + i == 'e5') {
+        allPokemon();
+        normalClick();
+      } else if ('e' + i == 'e6') {
+        allPokemon();
+        poisonClick();
+      } else if ('e' + i == 'e7') {
+        allPokemon();
+        electricClick();
+      } else if ('e' + i == 'e8') {
+        allPokemon();
+        groundClick();
+      } else if ('e' + i == 'e9') {
+        allPokemon();
+        fightingClick();
+      } else if ('e' + i == 'e10') {
+        allPokemon();
+        fairyClick();
+      } else if ('e' + i == 'e11') {
+        allPokemon();
+        psychicClick();
+      } else if ('e' + i == 'e12') {
+        allPokemon();
+        rockClick();
+      } else if ('e' + i == 'e13') {
+        allPokemon();
+        iceClick();
+      } else if ('e' + i == 'e14') {
+        allPokemon();
+        dragonClick();
       }
-
-      if (checkbox[1].checked) {
-        fireFunc();
-      }
+    } else {
+      document.getElementById('e' + i).checked = false;
     }
-  });
-});
-
-// // when at least 1 is clicked,
-// var checboxes;
-
-// for (var i = 0; i < checkbox.length; i++) {
-//   if (checkbox[i].checked) {
-//     allPokemon();
-//     console.log('lcick');
-//   }
-// }
-
-for (var i = 0; i < checkbox.length; i++) {
-  if (checkbox.checked) {
-    console.log('hello');
-    grassFunc();
+    if ('e' + i === id && document.getElementById('e' + i).checked === false) {
+      allPokemon();
+    }
   }
 }

@@ -22,9 +22,9 @@
 
 <nav class="sidebar-container">
   <ul class="sidebar">
-     <a href="">
+     <!-- <a href="">
       <li><img src="https://cdn.bulbagarden.net/upload/4/4b/Pok%C3%A9dex_logo.png" alt="" class="pokedex"></li>
-    </a>
+    </a> -->
       <div class="search">
         <input type="text" id="searchbar" onkeyup="searchPokemon()" placeholder="Who's that Pokemon?" class="search-button">
         <button class="thebutton"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Pokeball.PNG"></button>
@@ -36,7 +36,7 @@
 <!-- GRASS -->
 <div class="switch-box">     
         <div class="can-toggle switch grass-type" >         
-          <input id="e1" type="checkbox" class="checkedoff">      
+          <input id="e1" type="checkbox" class="checkedoff" >      
           <label for="e1" id="grass">
             <div class="can-toggle__switch" data-checked="Grass" data-unchecked="Off"></div>
           </label>
@@ -55,7 +55,7 @@
 <div class="switch-box">
         <div class="can-toggle switch water-type">
           <input id="e3" type="checkbox" class="checkedoff">
-          <label for="e3">
+          <label for="e3" id="water">
             <div class="can-toggle__switch" data-checked="Water" data-unchecked="Off"></div>
           </label>
         </div>
@@ -64,7 +64,7 @@
 <div class="switch-box">
         <div class="can-toggle switch bug-type">
           <input id="e4" type="checkbox" class="checkedoff">
-          <label for="e4">
+          <label for="e4" id="bug">
             <div class="can-toggle__switch" data-checked="Bug" data-unchecked="Off"></div>
           </label>
         </div>
@@ -73,7 +73,7 @@
 <div class="switch-box">
         <div class="can-toggle switch normal-type">
           <input id="e5" type="checkbox" class="checkedoff">
-          <label for="e5">
+          <label for="e5" id="normal">
             <div class="can-toggle__switch" data-checked="Normal" data-unchecked="Off"></div>
           </label>
         </div>
@@ -82,7 +82,7 @@
 <div class="switch-box">
         <div class="can-toggle switch poison-type">
           <input id="e6" type="checkbox" class="checkedoff">
-          <label for="e6">
+          <label for="e6" id="poison">
         <div class="can-toggle__switch" data-checked="Poison" data-unchecked="Off"></div>
         </label>
         </div>
@@ -91,7 +91,7 @@
 <div class="switch-box">
   <div class="can-toggle switch electric-type">
     <input id="e7" type="checkbox" class="checkedoff">
-    <label for="e7">
+    <label for="e7" id="electric">
   <div class="can-toggle__switch" data-checked="Electric" data-unchecked="Off"></div>
   </label>
   </div>
@@ -100,7 +100,7 @@
 <div class="switch-box">
   <div class="can-toggle switch ground-type">
     <input id="e8" type="checkbox" class="checkedoff">
-    <label for="e8">
+    <label for="e8" id="ground">
   <div class="can-toggle__switch" data-checked="Ground" data-unchecked="Off"></div>
   </label>
   </div>
@@ -109,7 +109,7 @@
 <div class="switch-box">
   <div class="can-toggle switch fighting-type">
     <input id="e9" type="checkbox" class="checkedoff">
-    <label for="e9">
+    <label for="e9" id="fighting">
   <div class="can-toggle__switch" data-checked="Fighting" data-unchecked="Off"></div>
   </label>
   </div>
@@ -118,7 +118,7 @@
 <div class="switch-box">
   <div class="can-toggle switch fairy-type">
     <input id="e10" type="checkbox" class="checkedoff">
-    <label for="e10">
+    <label for="e10" id="fairy">
   <div class="can-toggle__switch" data-checked="Fairy" data-unchecked="Off"></div>
   </label>
   </div>
@@ -127,7 +127,7 @@
 <div class="switch-box">
   <div class="can-toggle switch psychic-type">
     <input id="e11" type="checkbox" class="checkedoff">
-    <label for="e11">
+    <label for="e11" id="psychic">
   <div class="can-toggle__switch" data-checked="Psychic" data-unchecked="Off"></div>
   </label>
   </div>
@@ -136,7 +136,7 @@
 <div class="switch-box">
   <div class="can-toggle switch rock-type">
     <input id="e12" type="checkbox" class="checkedoff">
-    <label for="e12">
+    <label for="e12" id="rock">
   <div class="can-toggle__switch" data-checked="Rock" data-unchecked="Off"></div>
   </label>
   </div>
@@ -145,7 +145,7 @@
 <div class="switch-box">
   <div class="can-toggle switch ice-type">
     <input id="e13" type="checkbox" class="checkedoff">
-    <label for="e13">
+    <label for="e13" id="ice">
   <div class="can-toggle__switch" data-checked="Ice" data-unchecked="Off"></div>
   </label>
   </div>
@@ -154,7 +154,7 @@
 <div class="switch-box">
   <div class="can-toggle switch dragon-type">
     <input id="e14" type="checkbox" class="checkedoff">
-    <label for="e14">
+    <label for="e14" id="dragon">
   <div class="can-toggle__switch" data-checked="Dragon" data-unchecked="Off"></div>
   </label>
   </div>
@@ -168,13 +168,14 @@
 
       
       <!-- <li><img src="https://freepngimg.com/thumb/pokemon/37475-6-pikachu-transparent-image.png" alt="" class="sidebar-pic"></li> -->
-      <!-- <p class="copyright">Created by @mikeyyup & @techtilis</p> -->
+
       <button id="dark">Click here to toggle Dark Mode</button>
+      <p class="copyright">Created by @mikeyyup & @techtilis</p>
     </ul>
 
   </nav>
 
-<main class="card-container">
+<main class="card-container" id="card-container">
 
 <!-- Bulbasaur #001 -->
   <div class="card grasscard"> 

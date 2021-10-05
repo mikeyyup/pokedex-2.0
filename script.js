@@ -20,6 +20,21 @@ const dragon = document.getElementsByClassName('dragoncard');
 const checkbox = document.getElementsByClassName('checkedoff');
 
 const e1 = document.getElementById('e1');
+const e2 = document.getElementById('e2');
+const e3 = document.getElementById('e3');
+const e4 = document.getElementById('e4');
+const e5 = document.getElementById('e5');
+const e6 = document.getElementById('e6');
+const e7 = document.getElementById('e7');
+const e8 = document.getElementById('e8');
+const e9 = document.getElementById('e9');
+const e10 = document.getElementById('e10');
+const e11 = document.getElementById('e11');
+const e12 = document.getElementById('e12');
+const e13 = document.getElementById('e13');
+const e14 = document.getElementById('e14');
+
+let checkedList = [e14, e13];
 
 const grassSwitch = document.querySelector('#grass');
 const fireSwitch = document.querySelector('#fire');
@@ -36,6 +51,33 @@ const rockSwitch = document.querySelector('#rock');
 const iceSwitch = document.querySelector('#ice');
 const dragonSwitch = document.querySelector('#dragon');
 
+function searchPokemon() {
+  const searchBar = document.getElementById('searchbar').value.toUpperCase();
+  const cardContainer = document.getElementById('card-container');
+  const cards = cardContainer.getElementsByClassName('card');
+  for (let i = 0; i < cards.length; i++) {
+    let name = cards[i].querySelector('h3');
+    console.log(name);
+    if (name.innerText.toUpperCase().indexOf(searchBar) > -1) {
+      cards[i].style.display = '';
+    } else {
+      cards[i].style.display = 'none';
+    }
+  }
+}
+
+function allPokemon() {
+  for (var i = 0; i < allCards.length; i++) {
+    allCards[i].classList.add('none');
+  }
+}
+
+function allPokemon1() {
+  for (var i = 0; i < allCards.length; i++) {
+    allCards[i].classList.toggle('none');
+  }
+}
+
 function grassFunc() {
   for (var i = 0; i < grass.length; i++) {
     grass[i].classList.toggle('none');
@@ -47,6 +89,7 @@ function fireFunc() {
     fire[i].classList.toggle('none');
   }
 }
+
 function waterFunc() {
   for (var i = 0; i < water.length; i++) {
     water[i].classList.toggle('none');
@@ -108,44 +151,124 @@ function dragonFunc() {
   }
 }
 
-// function testy() {
-//   for (var i = 0; i < allCards.length; i++) {
-//     if (allCards[i] != e1.checked) {
-//       allCards[i].classList.add('none');
+// if (grassSwitch.checked) {
+//   console.log('hello');
+// }
+
+// grassSwitch.addEventListener('click', function () {
+//   grassFunc();
+// });
+// fireSwitch.addEventListener('click', function () {
+//   fireFunc();
+// });
+// waterSwitch.addEventListener('click', function () {
+//   waterFunc();
+// });
+// bugSwitch.addEventListener('click', function () {
+//   bugFunc();
+// });
+// normalSwitch.addEventListener('click', function () {
+//   normalFunc();
+// });
+// poisonSwitch.addEventListener('click', function () {
+//   poisonFunc();
+// });
+// electricSwitch.addEventListener('click', function () {
+//   electricFunc();
+// });
+// groundSwitch.addEventListener('click', function () {
+//   groundFunc();
+// });
+// fightingSwitch.addEventListener('click', function () {
+//   fightingFunc();
+// });
+// fairySwitch.addEventListener('click', function () {
+//   fairyFunc();
+// });
+// psychicSwitch.addEventListener('click', function () {
+//   psychicFunc();
+// });
+// rockSwitch.addEventListener('click', function () {
+//   rockFunc();
+// });
+// iceSwitch.addEventListener('click', function () {
+//   iceFunc();
+// });
+// dragonSwitch.addEventListener('click', function () {
+//   dragonFunc();
+// });
+
+// grassSwitch.addEventListener('click', function () {
+//   if (e1.checked == false) {
+//     console.log('grass clicked');
+//   }
+// });
+// grassSwitch.addEventListener('click', function () {
+//   if (e1.checked == false) {
+//     console.log('grass clicked');
+//   }
+// });
+// grassSwitch.addEventListener('click', function () {
+//   if (e1.checked == false) {
+//     console.log('grass clicked');
+//   }
+// });
+// grassSwitch.addEventListener('click', function () {
+//   if (e1.checked == false) {
+//     console.log('grass clicked');
+//   }
+// });
+
+// checkbox.addEventListener('click', function () {
+//   for (var i = 0; i < checkbox.length; i++) {
+//     if (checkbox[i].checked) {
+//       allPokemon1();
 //     } else {
-//       console.log('wtf');
+//       allPokemon();
 //     }
+//   }
+// });
+// checkbox.addEventListener('click', function () {
+//   console.log('hello');
+// });
 
-grassSwitch.addEventListener('click', function () {
-  fireFunc();
-  waterFunc();
-  bugFunc();
-  normalFunc();
-  poisonFunc();
-  electricFunc();
-  groundFunc();
-  fightingFunc();
-  fairyFunc();
-  psychicFunc();
-  rockFunc();
-  iceFunc();
-  dragonFunc();
+document.querySelectorAll('.checkedoff').forEach(item => {
+  item.addEventListener('click', function () {
+    //     for (var i = 0; i < checkbox.length; i++) {
+    //       console.log(checkbox[0].checked);
+    //     }
+    //   });
+    // });
 
-  // for (var i = 0; i < checkbox.length; i++) {
-  //   if (checkbox[i].checked == true) {
-  //     console.log('true'); // add class none to all card except those checked accounts
-  //   } else {
-  //     console.log('false');
-  //   }
-  // }
-});
+    for (var i = 0; i < checkbox.length; i++) {
+      //   console.log('clciedk');
+      // } else {
+      if (checkbox[0].checked == true) {
+        grassFunc();
+      } else {
+        grassFunc();
+      }
 
-fireSwitch.addEventListener('click', function () {
-  for (var i = 0; i < checkbox.length; i++) {
-    if (checkbox[i].checked == false) {
-      console.log('true'); // add class none to all card except those checked accounts
-    } else {
-      console.log('false');
+      if (checkbox[1].checked) {
+        fireFunc();
+      }
     }
-  }
+  });
 });
+
+// // when at least 1 is clicked,
+// var checboxes;
+
+// for (var i = 0; i < checkbox.length; i++) {
+//   if (checkbox[i].checked) {
+//     allPokemon();
+//     console.log('lcick');
+//   }
+// }
+
+for (var i = 0; i < checkbox.length; i++) {
+  if (checkbox.checked) {
+    console.log('hello');
+    grassFunc();
+  }
+}

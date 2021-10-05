@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:300,400,600');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:300,400,600'); */
 
 * {
   box-sizing: border-box;
@@ -61,11 +61,15 @@ li {
   bottom: 60px;
 }
 .copyright {
-  bottom: 10px;
-  position: absolute;
-  margin-left: 8%;
+  /* bottom: 10px; */
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
   font-size: 1rem;
-  color: white;
+  color: rgb(205, 217, 226);
 }
 
 ul > a {
@@ -246,7 +250,7 @@ button {
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px rgba(148, 138, 138, 0.9);
   border-radius: 20px;
   color: #436a6b;
 }
@@ -326,7 +330,7 @@ h3 {
 }
 
 .button:hover {
-  background-color: rgba(213, 197, 197, 0.749);
+  background-color: rgba(7, 75, 49, 0.749);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
@@ -468,11 +472,14 @@ h4 {
   border-radius: 15px;
   margin-left: 1.5rem;
   margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .light {
 }
-
+/* 
 #dark {
   background-color: rgb(100, 94, 94);
   color: yellow;
@@ -480,8 +487,12 @@ h4 {
   border-radius: 15px;
   margin-left: 1.5rem;
   margin-top: 2rem;
-}
+} */
 
 .back {
   color: white;
+}
+
+.logo-container {
+  background-color: rgb(24, 40, 38);
 }
